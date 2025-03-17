@@ -6,7 +6,7 @@ Modify the `backend/db.json` with the data you need.
 
 Run `docker compose up -d` to start the application with docker
 
-> [!INFO]
+> [!NOTE]
 > You need to run Angular CLI commands within docker
 
 ## Docker cheatsheet
