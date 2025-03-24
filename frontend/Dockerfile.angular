@@ -1,0 +1,17 @@
+FROM node:18
+
+WORKDIR /usr/src/app
+
+# Copier les fichiers de configuration pour installer les dépendances
+COPY package*.json ./
+
+# Installer Angular CLI en version 19.2.3 et les dépendances du projet
+RUN npm install -g @angular/cli@19.2.3
+RUN npm install
+
+# Copier l’ensemble du code de l’application
+COPY . .
+
+EXPOSE 4200
+
+CMD ["ng", "serve", "--host", "0.0.0.0"]

@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  angular:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile.angular
+    ports:
+      - "4200:4200"
+    volumes:
+      - ./frontend:/usr/src/app
+      - /usr/src/app/node_modules
+    environment:
+      - NODE_ENV=development
+    command: ng serve --host 0.0.0.0
+
+  json-server:
+    image: clue/json-server:latest
+    volumes:
+      - ./backend:/data
+    ports:
+      - "3000:80"
+    command: ["--watch", "/data/db.json"]
