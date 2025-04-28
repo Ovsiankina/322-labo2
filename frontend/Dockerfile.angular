@@ -7,10 +7,14 @@ COPY package*.json ./
 
 # Installer Angular CLI en version 19.2.3 et les dépendances du projet
 RUN npm install -g @angular/cli@19.2.3
-RUN npm install
+RUN npm install --legacy-peer-deps
+RUN npm install @angular/material@19.2.7 @angular/cdk@19.2.7 --legacy-peer-deps
 
-# Copier l’ensemble du code de l’application
+# Copier l'ensemble du code de l'application
 COPY . .
+
+# Installer les types TypeScript
+RUN npm install --save-dev @types/node
 
 EXPOSE 4200
 

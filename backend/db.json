@@ -1,13 +1,164 @@
 {
-  "posts": [
-    { "id": "1", "title": "a title", "views": 100 },
-    { "id": "2", "title": "another title", "views": 200 }
+  "users": [
+    {
+      "id": "1",
+      "name": [
+        {
+          "lastName": "Prenom",
+          "firstName": "Nom"
+        }
+      ],
+      "my_favorites": [
+        {
+          "hike_id": "1"
+        }
+      ]
+    }
   ],
-  "comments": [
-    { "id": "1", "text": "a comment about post 1", "postId": "1" },
-    { "id": "2", "text": "another comment about post 1", "postId": "1" }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  "hikes": [
+    {
+      "hike_id": "1",
+      "hike_name": "Nom de la randonnée",
+      "canton": "Canton",
+      "map_location": "c:/Users/User/Desktop/322-labo2/Map.png",
+      "hike_description": "Description de la randonnée",
+      "hike_difficulty": "Difficulté de la randonnée",
+      "hike_distance": "Distance de la randonnée",
+      "hike_duration": "Durée de la randonnée",
+      "hike_elevation": [
+        {
+          "positive_elevation": "Dénivelé positif de la randonnée",
+          "negative_elevation": "Dénivelé négatif de la randonnée"
+        }
+      ],
+      "pictures": [
+        {
+          "id": "1",
+          "name": "Nom de la photo",
+          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture1.png"
+        },
+        {
+          "id": "2",
+          "name": "Nom de la photo",
+          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture2.png"
+        },
+        {
+          "id": "3",
+          "name": "Nom de la photo",
+          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture3.png"
+        },
+        {
+          "id": "4",
+          "name": "Nom de la photo",
+          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture4.png"
+        },
+        {
+          "id": "5",
+          "name": "Nom de la photo",
+          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture5.png"
+        },
+        {
+          "id": "6",
+          "name": "Nom de la photo",
+          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture6.png"
+        }
+      ]
+    },
+    {
+      "hike_id": "2",
+      "hike_name": "Nom de la randonnée",
+      "canton": "Canton",
+      "map_location": "c:/Users/User/Desktop/322-labo2/Map.png",
+      "hike_description": "Description de la randonnée",
+      "hike_difficulty": "Difficulté de la randonnée",
+      "hike_distance": "Distance de la randonnée",
+      "hike_duration": "Durée de la randonnée",
+      "hike_elevation": [
+        {
+          "positive_elevation": "Dénivelé positif de la randonnée",
+          "negative_elevation": "Dénivelé négatif de la randonnée"
+        }
+      ],
+      "pictures": [
+        {
+          "id": "7",
+          "name": "Nom de la photo",
+          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture1.png"
+        },
+        {
+          "id": "8",
+          "name": "Nom de la photo",
+          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture2.png"
+        },
+        {
+          "id": "9",
+          "name": "Nom de la photo",
+          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture3.png"
+        },
+        {
+          "id": "10",
+          "name": "Nom de la photo",
+          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture4.png"
+        },
+        {
+          "id": "11",
+          "name": "Nom de la photo",
+          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture5.png"
+        },
+        {
+          "id": "12",
+          "name": "Nom de la photo",
+          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture6.png"
+        }
+      ]
+    },
+    {
+      "hike_id": "3",
+      "hike_name": "Nom de la randonnée",
+      "canton": "Canton",
+      "map_location": "c:/Users/User/Desktop/322-labo2/Map.png",
+      "hike_description": "Description de la randonnée",
+      "hike_difficulty": "Difficulté de la randonnée",
+      "hike_distance": "Distance de la randonnée",
+      "hike_duration": "Durée de la randonnée",
+      "hike_elevation": [
+        {
+          "positive_elevation": "Dénivelé positif de la randonnée",
+          "negative_elevation": "Dénivelé négatif de la randonnée"
+        }
+      ],
+      "pictures": [
+        {
+          "id": "13",
+          "name": "Nom de la photo",
+          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture1.png"
+        },
+        {
+          "id": "14",
+          "name": "Nom de la photo",
+          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture2.png"
+        },
+        {
+          "id": "15",
+          "name": "Nom de la photo",
+          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture3.png"
+        },
+        {
+          "id": "16",
+          "name": "Nom de la photo",
+          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture4.png"
+        },
+        {
+          "id": "17",
+          "name": "Nom de la photo",
+          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture5.png"
+        },
+        {
+          "id": "18",
+          "name": "Nom de la photo",
+          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture6.png"
+        }
+      ]
+    }
+  ]
 }
