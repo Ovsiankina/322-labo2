@@ -1,68 +1,115 @@
 {
-  "users": [
-    {
-      "id": "1",
-      "name": [
-        {
-          "lastName": "Prenom",
-          "firstName": "Nom"
-        }
-      ],
-      "my_favorites": [
-        {
-          "hike_id": "1"
-        }
-      ]
-    }
-  ],
   "hikes": [
     {
       "hike_id": "1",
-      "hike_name": "Nom de la randonnée",
-      "canton": "Canton",
-      "map_location": "c:/Users/User/Desktop/322-labo2/Map.png",
-      "hike_description": "Description de la randonnée",
-      "hike_difficulty": "Difficulté de la randonnée",
-      "hike_distance": "Distance de la randonnée",
-      "hike_duration": "Durée de la randonnée",
-      "hike_elevation": [
-        {
-          "positive_elevation": "Dénivelé positif de la randonnée",
-          "negative_elevation": "Dénivelé négatif de la randonnée"
-        }
-      ],
-      "pictures": [
-        {
-          "id": "1",
-          "name": "Nom de la photo",
-          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture1.png"
-        },
-        {
-          "id": "2",
-          "name": "Nom de la photo",
-          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture2.png"
-        },
-        {
-          "id": "3",
-          "name": "Nom de la photo",
-          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture3.png"
-        },
-        {
-          "id": "4",
-          "name": "Nom de la photo",
-          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture4.png"
-        },
-        {
-          "id": "5",
-          "name": "Nom de la photo",
-          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture5.png"
-        },
-        {
-          "id": "6",
-          "name": "Nom de la photo",
-          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture6.png"
-        }
-      ]
+      "hike_name": "Moudon par la petite porte",
+      "canton": {
+        "name": "Vaud",
+        "badge": "asset/canton_badges/Vaud.svg"
+      },
+      "map_location": "asset/pictures_hiking_1/carte.png",
+      "hike_banner": "asset/pictures_hiking_1/banniere.png",
+      "hike_difficulty": "Facile",
+      "hike_distance": "6,10",
+      "hike_duration": "2h15",
+      "hike_elevation": {
+        "positive_elevation": "72",
+        "negative_elevation": "72"
+      },
+      "hike_description": {
+        "hike_intro": "La ville haute de l'ancienne «capitale» du pays de Vaud savoyard constitue un ensemble architectural exceptionnel du Moyen-Âge et de l'Ancien Régime. Invitation à le parcourir sous tous ses angles.",
+        "hike_paragraph": [
+          {
+            "id": "1",
+            "content": "Pour se rendre à Moudon, en venant des rives du Léman, on doit tout d'abord traverser haut plateau vallonné du Jorat. "
+          },
+          {
+            "id": "2",
+            "content": "À la hauteur du village de Vucherens, s'ouvre la large vallée de la Broye moyenne. Une longue descente conduit au hameau de Bressonnaz, point de départ de notre balade. \n Le hameau de Bressonnaz se situe au confluent de trois rivières: la Broye sortant du défilé de Brivaux, le Carrouge et la Bressonne. "
+          },
+          {
+            "id": "3",
+            "content": "C'était aussi un important noeud routier ayant nécessité la construction de plusieurs ponts. Le plus ancien, franchissant la Bressonne, a été recouvert par la grande route actuelle dont le fort impact perturbe la compréhension du site historique. Les deux autres ont été entrepris entre 1698 et 1701 afin de favoriser l'axe de transit par la vallée de la Broye. Jusqu'alors, les gros «chars d'Allemagne» venant du Jorat devaient soit passer la Broye à gué pour rejoindre la rive droite, soit longer la rive gauche, puis traverser avec beaucoup de peine la ville haute de Moudon (notre itinéraire)."
+          },
+          {
+            "id": "4",
+            "content": "Le grand pont sur la Broye a été transformé au niveau des parapets, tandis que le petit pont sur le Carrouge est entièrement conservé. Tous les deux portent encore leur inscription gravée par l'entrepreneur Jean Favre, de Neuchâtel. On peut s'amuser à y déchiffrer la date de construction: en additionnant les lettres plus grandes correspondant à des chiffres romains, on obtient le millésime de 1698 pour le grand pont et de 1701 pour le petit."
+          },
+          {
+            "id": "5",
+            "content": "Le hameau était autrefois beaucoup plus animé, avec son péage, ses trois moulins et son auberge, dont on peut voir encore le très grand rural de 1824. Il ne subsiste qu'un restaurant et la petite gare de Bressonnaz, désaffectée."
+          },
+          {
+            "id": "6",
+            "content": "Prendre le pont qui traverse la grande route de Berne, puis tourner à droite sur le chemin de Valacrêt. Notre itinéraire suit la route d'ori- gine romaine, sur le coteau dominant la rive gauche de la Broye. Longer la caserne sanitaire, qui s'élève à l'emplacement d'un établissement romain. Plus loin, à gauche, la ferme de Valacrêt, typique du début du XIXe siècle avec son loge- ment et son rural séparés."
+          },
+          {
+            "id": "7",
+            "content": "Au pied de la montée, vue sur la colline du Fey et ses immeubles locatifs, à droite, tandis que la silhouette de la vieille ville se profile au loin. Traverser une petite zone de villas puis longer sur 350 m la route d'Hermenches pour aborder Moudon «par la petite porte». C'est de ce côté que la ville offre la vue la plus intimiste. La porte réservée aux chars (sur la rue, à gauche) n'existe plus, mais les piétons peuvent encore emprunter la passerelle de pierre qui franchit le fossé taillé dans la molasse et portait autrefois aussi les conduites de fontaines. À l'extrémité de la passerelle, l'enceinte s'ouvrait par une poterne permettant de pénétrer dans la plus petite rue de la ville, que les textes anciens appelaient parfois carroz (coin) ou cul du Vieux-Bourg."
+          },
+          {
+            "id": "8",
+            "content": "Le quartier du Vieux-Bourg est l'agrandissement le plus ancien de la ville (début du XIIIe siècle) hors de son noyau primitif. La grande tour qui s'élève au bout de la rue défendait l'entrée de ce quartier originel de la ville haute, le quartier du Château ou castrum (début du XIIe siècle)."
+          },
+          {
+            "id": "9",
+            "content": "Au Moyen-Âge, c'était ici la grande place des foires, bordée de maisons contigues, parmi lesquelles des halles, une boucherie, la maison des banquiers Lombard (au nord du fragment de ruelle conservé). À l'extrémité orientale, la place était fermée par l'église Notre-Dame. Lors de sa démolition complète en 1729, son horloge a été transférée sur la tourelle d'escalier de la maison de Rochefort."
+          },
+          {
+            "id": "10",
+            "content": "Le personnage qui surmonte la grande fontaine, sculpté en 1559 par Laurent Perroud, de Cressier, est le seul Moïse du XVIe siècle qui subsiste sur les fontaines de Suisse. Situé proche de l'ancienne église Notre-Dame, il symbolise la Loi divine, tandis que la statue de la Justice que l'on verra plus bas symbolise la loi civile. Remarquer le cercle de fer du bassin qui date encore de 1557."
+          },
+          {
+            "id": "11",
+            "content": "Des panneaux archéologiques donnent toutes les indications nécessaires sur l'état originel des lieux ainsi que sur les aménagements urbains effectués dans les années 1990, lors d'impor- tants travaux de consolidation de la colline."
+          },
+          {
+            "id": "12",
+            "content": "La rue du Château qui descend au-dessous de l'ancienne église pourrait s'appeler la rue des arcades. Elle était en effet longée des deux côtés par des portiques d'arcades surélevés reposant sur des avant-caves, témoins de l'activité mar- chande de ce quartier. Certaines de ces arcades, murées au XVIe siècle, ont été dégagées. La plus connue, rue du Château 42, a pu être datée de 1280. Au milieu de la rangée nord, la maison dite bernoise fait exception, du fait que la terrasse est protégée non pas par des arcades de pierre mais par un profond avant- toit sur poteau."
+          },
+          {
+            "id": "13",
+            "content": "Au-devant de la grande tour du château, l'ancien fossé a été aménagé en une place de pique- nique. N'hésitez pas à ouvrir la poterne qui vous permettra d'avoir une vue sur la Mérine et sur les arrières de la tour dont l'enceinte s'est effondrée plusieurs fois depuis le XVe siècle. Revenir sur la place de la Poterne pour admirer la célèbre «maison des États» et sa façade du XVe siècle. À la hauteur du n° 11, à l'en- droit le plus raide de la rue, une porte barrait l'accès oriental du noyau primitif du castrum. Au-dessous, le quartier de Rotto-Borgeau (bourg abrupt) était autrefois bâti des deux côtés mais, la Broye ayant rongé la falaise, les maisons ont été remplacées ici par un haut mur daté de 1665."
+          },
+          {
+            "id": "14",
+            "content": "Arrivés sur terrain plat, aux Plans-Borgeaux, vous trouverez, au pied de la fontaine de la Justice, l'Office du tourisme qui tient à dispo- sition la documentation utile pour une visite de la ville basse. Ce quartier est riche lui aussi en surprises et en monuments, parmi lesquels la très belle église gothique de Saint-Étienne. Pour terminer la promenade, passer sous le clocher de Saint-Étienne, puis sur le pont de la Douane, emprunter le sentier des Biches pour rejoindre le quartier de Mauborget, puis la place du 14-Avril. De là, le chemin qui longe la Broye jusqu'à Bressonnaz offre de belles pers- pectives sur la ville haute et la campagne."
+          }
+        ],
+        "hike_outro": "Texte: Monique Fontannaz \n Photos: Jean-Claude Péclet \n \n Pour en savoir davantage \n Monique Fontannaz, La ville de Moudon et ses musées, Berne 2002.Monique Fontannaz, Les monuments d'art et d'histoire du canton de Vaud, VI, La ville de Moudon (Société d'histoire de l'art en Suisse), Berne, 2006",
+        "hike_point_of_interest": [
+          {
+            "id": "1",
+            "title": "Point d’intérêt A",
+            "description": "Caché par la verdure, le petit pont en dos d'âne qui franchit le confluent du Carrouge et de la Bressonne a conservé à son sommet la stèle et l'inscription en capitales romaines rappelant qu'il a été construit par ordre du trésorier de la puissante République de Berne et sous la protection de Dieu",
+            "picture_location": "asset/pictures_hiking_1/A.png"
+          },
+          {
+            "id": "2",
+            "title": "Point d’intérêt B",
+            "description": "Vue sur le quartier du Vieux-Bourg et le château de Carrouge depuis le chemin de Valacrêt. Les maisons du Vieux-Bourg dominant la falaise possèdent souvent deux niveaux de caves, en partie taillés dans la molasse.",
+            "picture_location": "asset/pictures_hiking_1/B.png"
+          },
+          {
+            "id": "3",
+            "title": "Point d’intérêt C",
+            "description": "Vue depuis la terrasse du château de Carrouge sur le Vieux-Bourg, sur la route d'Hermenches et le chemin de Valacrêt.",
+            "picture_location": "asset/pictures_hiking_1/C.png"
+          },
+          {
+            "id": "4",
+            "title": "Point d’intérêt D",
+            "description": "Le poreau qui soutient depuis 1646 le grand avant-roir de la maison bernoises est en fait plutôt caractéristique des domes genevois. \n Cette toiture imposante abrite en réalité trois maisons d'origine médiévale. bien visibles au niveau des caves et à l'arrière.",
+            "picture_location": "asset/pictures_hiking_1/D.png"
+          },
+          {
+            "id": "5",
+            "title": "Point d’intérêt E",
+            "description": "La statue de la Justice est, comme celle de Moise, une ceuvre de Laurent Permud de 1559. Al'arrière, la belle fenêtre gothique apuètrepercée dans l'enceinte de Rotto-Borgeau lorsque celle-ci a été englobée dans un nouvel agrandissement de la ville",
+            "picture_location": "asset/pictures_hiking_1/E.png"
+          }
+        ]
+      }
     },
     {
       "hike_id": "2",
@@ -75,8 +122,8 @@
       "hike_duration": "Durée de la randonnée",
       "hike_elevation": [
         {
-          "positive_elevation": "Dénivelé positif de la randonnée",
-          "negative_elevation": "Dénivelé négatif de la randonnée"
+          "positive_elevation": "72",
+          "negative_elevation": "72"
         }
       ],
       "pictures": [

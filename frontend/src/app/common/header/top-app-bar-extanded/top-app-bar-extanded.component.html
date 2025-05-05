@@ -2,29 +2,15 @@
   <div class="logoFrame">
     <app-logo class="logo"></app-logo>
   </div>
-  <div
-    *ngIf="
-      searchBar === 'On' &&
-      ((twoFilters === 'Off' && noMatct === 'Off') ||
-        (connected === 'On' && oneFilter === 'Off' && noMatct === 'Off') ||
-        (connected === 'On' && oneFilter === 'Off' && twoFilters === 'Off'))
-    "
+  <!--   <div
+    *ngIf="searchBar === 'On' && (noMatct === 'Off' || connected === 'On')"
     class=""
     [ngClass]="{
-      searchBar_twoFiltersOffNoMatctOffConnectedOnOneFilterOffNoMatctOffConnectedOnOneFilterOffTwoFiltersOff:
-        (twoFilters === 'Off' && noMatct === 'Off') ||
-        (connected === 'On' && oneFilter === 'Off' && noMatct === 'Off') ||
-        (connected === 'On' && oneFilter === 'Off' && twoFilters === 'Off'),
+      searchBar_NoMatctOffConnectedOnNoMatctOffConnectedOn:
+        noMatct === 'Off' || connected === 'On'
     }"
   >
-    <div
-      *ngIf="
-        (twoFilters === 'Off' && noMatct === 'Off') ||
-        (connected === 'On' && oneFilter === 'Off' && noMatct === 'Off') ||
-        (connected === 'On' && oneFilter === 'Off' && twoFilters === 'Off')
-      "
-      class="stateLayer"
-    >
+    <div *ngIf="noMatct === 'Off' || connected === 'On'" class="stateLayer">
       <div class="content">
         <span class="supportingText">Entrez votre recherche</span>
       </div>
@@ -38,27 +24,18 @@
         </div>
       </div>
     </div>
-  </div>
-  <div
-    *ngIf="
-      connected === 'Off' &&
-      oneFilter === 'Off' &&
-      twoFilters === 'Off' &&
-      noMatct === 'Off'
-    "
+  </div> -->
+  <!--   <div
+    *ngIf="connected === 'Off' && noMatct === 'Off'"
     class="icon"
     [ngClass]="{
-      icon_connectedOffSearchBarOnOneFilterOffTwoFiltersOffNoMatctOff:
+      icon_connectedOffSearchBarOnNoMatctOff:
         connected === 'Off' &&
         searchBar === 'On' &&
-        oneFilter === 'Off' &&
-        twoFilters === 'Off' &&
         noMatct === 'Off',
-      icon_connectedOffSearchBarOffOneFilterOffTwoFiltersOffNoMatctOff:
+      icon_connectedOffSearchBarOffNoMatctOff:
         connected === 'Off' &&
         searchBar === 'Off' &&
-        oneFilter === 'Off' &&
-        twoFilters === 'Off' &&
         noMatct === 'Off',
     }"
   >
@@ -75,16 +52,9 @@
       />
     </svg>
   </div>
-
+ -->
   <!--   <app-account-circle
-    *ngIf="
-      (oneFilter === 'Off' && twoFilters === 'Off' && noMatct === 'Off') ||
-      connected === 'On' ||
-      (searchBar === 'On' && twoFilters === 'Off' && noMatct === 'Off') ||
-      oneFilter === 'On' ||
-      (searchBar === 'On' && oneFilter === 'Off' && noMatct === 'Off') ||
-      (searchBar === 'On' && oneFilter === 'Off' && twoFilters === 'Off')
-    "
+    *ngIf="noMatct === 'Off' || connected === 'On' || searchBar === 'On'"
     class="accountCircle"
   ></app-account-circle> -->
 </div>

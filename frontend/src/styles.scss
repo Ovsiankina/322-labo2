@@ -137,3 +137,28 @@ body {
 .p-5 {
   padding: 3rem;
 }
+
+// Card styles
+.card {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: $spacing-md;
+  margin-bottom: $spacing-md;
+
+  &-header {
+    padding-bottom: $spacing-sm;
+    margin-bottom: $spacing-sm;
+    border-bottom: 1px solid $light-color;
+  }
+
+  &-body {
+    padding: $spacing-md 0;
+  }
+
+  &-footer {
+    padding-top: $spacing-sm;
+    margin-top: $spacing-sm;
+    border-top: 1px solid $light-color;
+  }
+}
