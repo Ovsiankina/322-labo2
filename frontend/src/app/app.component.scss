@@ -1,0 +1,12 @@
+@import "../styles.scss";
+
+:host {
+  display: block;
+  min-height: 100vh;
+  background-color: $light-color;
+}
+
+router-outlet {
+  display: block;
+  padding-top: 68px; // Pour compenser la hauteur de la barre de navigation
+}

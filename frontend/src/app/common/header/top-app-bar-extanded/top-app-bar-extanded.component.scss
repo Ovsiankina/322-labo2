@@ -1,0 +1,147 @@
+@import "../../../../styles.scss";
+
+.root {
+  padding: 0px 24px 0px 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 108px;
+  box-sizing: border-box;
+  background: #fef7ff;
+}
+.logoFrame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background: #ffffff;
+  width: 188px;
+  height: 68px;
+}
+.logo {
+  position: relative;
+  box-sizing: border-box;
+  width: 157px;
+  height: 33px;
+}
+
+.searchBar_twoFiltersOffNoMatctOffConnectedOnOneFilterOffNoMatctOffConnectedOnOneFilterOffTwoFiltersOff {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 4px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 28px;
+  background: #ece6f0;
+  width: 1267px;
+  height: 56px;
+}
+.stateLayer {
+  padding: 4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 4px;
+  box-sizing: border-box;
+  width: -webkit-fill-available;
+  height: 100%;
+}
+.content {
+  padding: 0px 20px 0px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+  box-sizing: border-box;
+  width: -webkit-fill-available;
+  height: 100%;
+}
+.supportingText {
+  display: flex;
+  box-sizing: content-box;
+  color: #000000;
+  font-weight: 400;
+  text-align: left;
+  text-wrap: nowrap;
+}
+
+.trailingElements {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 0px;
+  box-sizing: border-box;
+}
+.a1stTrailingIcon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+  box-sizing: border-box;
+  width: 48px;
+  height: 48px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 100px;
+}
+.stateLayer {
+  padding: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+.search {
+  position: relative;
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+}
+
+.icon {
+  display: flex;
+  box-sizing: content-box;
+}
+
+.icon_connectedOffSearchBarOnOneFilterOffTwoFiltersOffNoMatctOff {
+  display: flex;
+}
+
+.icon_connectedOffSearchBarOffOneFilterOffTwoFiltersOffNoMatctOff {
+  display: flex;
+}
+
+.accountCircle {
+  position: relative;
+  box-sizing: border-box;
+  width: 47px;
+  height: 47px;
+}
