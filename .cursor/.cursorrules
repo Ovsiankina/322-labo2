@@ -1,0 +1,132 @@
+# Angular Development Rules
+
+## Code Standards
+
+- Use TypeScript with Angular 19
+- Respect complexity limits:
+  - Maximum 4 parameters per function
+  - Maximum 50 executable lines per function
+  - Maximum 80 characters per line
+  - Maximum 2 levels of nesting
+- Use forNext() instead of traditional loops
+- Follow configuration files:
+  - .eslintrc.json
+  - .prettierrc
+  - .htmlhintrc
+  - .editorconfig
+- Maintain JSDoc documentation during refactoring
+- JSON Server Requirements:
+  - Install and configure json-server
+  - Create db.json with realistic test data
+  - Define RESTful endpoints
+  - Implement proper error handling
+  - Use environment variables for API URLs
+- Code Documentation Standards:
+  - Use JSDoc for all functions and classes:
+    - @description: Clear purpose of the function/class
+    - @param: Parameter description with types
+    - @returns: Return value description with type
+    - @throws: Error conditions if applicable
+  - Component Documentation:
+    - @Component: Purpose and responsibility
+    - @Input: Input property descriptions
+    - @Output: Output event descriptions
+  - Service Documentation:
+    - @Injectable: Service purpose and scope
+    - @Method: Public method descriptions
+  - Interface Documentation:
+    - @interface: Purpose and usage
+    - @property: Property descriptions with types
+  - File Header:
+    - File purpose
+    - Author
+    - Last modified date
+    - Dependencies
+
+## Evaluation Criteria
+
+### 1. Implementation
+
+#### 1.1 - Design Compliance
+
+- Navigation and routing
+- Component organization
+- Screen layouts
+- Element proportions and sizes
+- Responsive design
+
+#### 1.2 - Angular Material Usage
+
+- Module installation and configuration
+- Appropriate use of Material components
+- Consistent theme customization
+- Material Design guidelines compliance
+
+#### 1.3 - MVC Architecture
+
+- Services with single responsibilities
+- Well-defined data models
+- Controllers (components) respecting their role
+- Clear separation of concerns
+
+#### 1.4 - Components
+
+- Logical UI decomposition
+- Reusable components
+- Inter-component communication
+- Consistent folder structure
+
+#### 1.5 - Code Quality
+
+- Naming conventions
+- Documentation and comments
+- Debug code removal
+- Consistent formatting
+
+### 2. Mock
+
+#### 2.1 - REST API
+
+- Installation and configuration
+- Defined API routes
+- Middleware configuration
+- Functionality testing
+
+#### 2.2 - Test Data
+
+- Realistic data
+- Use case coverage
+- Consistent structure
+- Sufficient volume
+
+### 3. Documentation
+
+#### 3.1 - Installation
+
+- Prerequisites
+- Detailed steps
+- Configuration
+- Troubleshooting
+
+### 4. Video Report
+
+#### 4.1 - Explanations
+
+- Implemented features
+- Technical architecture
+- Design choices
+- Demonstration
+
+#### 4.2 - Self-Critique
+
+- Strengths
+- Improvement points
+- Concrete proposals
+- Experience feedback
+
+### 5. Delivery
+
+- Deadline compliance
+- Format compliance
+- Presentation quality
+- Spelling and grammar

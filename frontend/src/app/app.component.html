@@ -1,13 +1,7 @@
 <div class="content">
   <app-top-app-bar-extanded></app-top-app-bar-extanded>
-
-  <div class="cards-container">
-    <app-card [hikeId]="1"></app-card>
-    <app-card [hikeId]="2"></app-card>
-    <app-card [hikeId]="3"></app-card>
-  </div>
-
-  <!-- <app-card></app-card> -->
+  <main>
+    <router-outlet></router-outlet>
+  </main>
   <app-footer-bar></app-footer-bar>
-  <!-- <router-outlet></router-outlet> -->
 </div>

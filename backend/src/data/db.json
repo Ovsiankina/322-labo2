@@ -5,13 +5,14 @@
       "hike_name": "Moudon par la petite porte",
       "canton": {
         "name": "Vaud",
-        "badge": "asset/canton_badges/Vaud.svg"
+        "badge": "assets/canton_badges/Vaud.svg"
       },
-      "map_location": "asset/pictures_hiking_1/carte.png",
-      "hike_banner": "asset/pictures_hiking_1/banniere.png",
+      "map_location": "assets/hikes_pictures/1/carte.png",
+      "avatar": "assets/hikes_pictures/1/avatar.png",
+      "hike_banner": "assets/hikes_pictures/1/banniere.png",
       "hike_difficulty": "Facile",
-      "hike_distance": 6.1,
-      "hike_duration": "2h15",
+      "hike_distance": "6,10",
+      "hike_duration": "2h 15min",
       "hike_elevation": {
         "positive_elevation": 72,
         "negative_elevation": 72
@@ -82,31 +83,31 @@
             "id": "1",
             "title": "Point d'intérêt A",
             "description": "Caché par la verdure, le petit pont en dos d'âne qui franchit le confluent du Carrouge et de la Bressonne a conservé à son sommet la stèle et l'inscription en capitales romaines rappelant qu'il a été construit par ordre du trésorier de la puissante République de Berne et sous la protection de Dieu",
-            "picture_location": "asset/pictures_hiking_1/A.png"
+            "picture_location": "assets/hikes_pictures/1/A.png"
           },
           {
             "id": "2",
             "title": "Point d'intérêt B",
             "description": "Vue sur le quartier du Vieux-Bourg et le château de Carrouge depuis le chemin de Valacrêt. Les maisons du Vieux-Bourg dominant la falaise possèdent souvent deux niveaux de caves, en partie taillés dans la molasse.",
-            "picture_location": "asset/pictures_hiking_1/B.png"
+            "picture_location": "assets/hikes_pictures/1/B.png"
           },
           {
             "id": "3",
             "title": "Point d'intérêt C",
             "description": "Vue depuis la terrasse du château de Carrouge sur le Vieux-Bourg, sur la route d'Hermenches et le chemin de Valacrêt.",
-            "picture_location": "asset/pictures_hiking_1/C.png"
+            "picture_location": "assets/hikes_pictures/1/C.png"
           },
           {
             "id": "4",
             "title": "Point d'intérêt D",
             "description": "Le poreau qui soutient depuis 1646 le grand avant-roir de la maison bernoises est en fait plutôt caractéristique des domes genevois. \n Cette toiture imposante abrite en réalité trois maisons d'origine médiévale. bien visibles au niveau des caves et à l'arrière.",
-            "picture_location": "asset/pictures_hiking_1/D.png"
+            "picture_location": "assets/hikes_pictures/1/D.png"
           },
           {
             "id": "5",
             "title": "Point d'intérêt E",
             "description": "La statue de la Justice est, comme celle de Moise, une ceuvre de Laurent Permud de 1559. Al'arrière, la belle fenêtre gothique apuètrepercée dans l'enceinte de Rotto-Borgeau lorsque celle-ci a été englobée dans un nouvel agrandissement de la ville",
-            "picture_location": "asset/pictures_hiking_1/E.png"
+            "picture_location": "assets/hikes_pictures/1/E.png"
           }
         ]
       }
@@ -115,17 +116,18 @@
       "id": "2",
       "hike_name": "Nom de la randonnée",
       "canton": {
-        "name": "Canton",
-        "badge": "asset/canton_badges/default.svg"
+        "name": "Non Défini",
+        "badge": "assets/canton_badges/default.svg"
       },
-      "map_location": "asset/pictures_hiking_2/carte.png",
-      "hike_banner": "asset/pictures_hiking_2/banniere.png",
-      "hike_difficulty": "Difficulté de la randonnée",
-      "hike_distance": 0,
-      "hike_duration": "Durée de la randonnée",
+      "map_location": "assets/hikes_pictures/avatar-default.png",
+      "avatar": "assets/hikes_pictures/avatar-default.png",
+      "hike_banner": "assets/hikes_pictures/avatar-default.png",
+      "hike_difficulty": "Non Défini",
+      "hike_distance": "0,00",
+      "hike_duration": "00h 00min",
       "hike_elevation": {
-        "positive_elevation": 72,
-        "negative_elevation": 72
+        "positive_elevation": 0,
+        "negative_elevation": 0
       },
       "hike_description": {
         "hike_intro": "Description de la randonnée",
@@ -137,14 +139,222 @@
       "id": "3",
       "hike_name": "Nom de la randonnée",
       "canton": {
-        "name": "Canton",
-        "badge": "asset/canton_badges/default.svg"
+        "name": "Non Défini",
+        "badge": "assets/canton_badges/default.svg"
       },
-      "map_location": "asset/pictures_hiking_3/carte.png",
-      "hike_banner": "asset/pictures_hiking_3/banniere.png",
-      "hike_difficulty": "Difficulté de la randonnée",
-      "hike_distance": 0,
-      "hike_duration": "Durée de la randonnée",
+      "map_location": "assets/hikes_pictures/avatar-default.png",
+      "avatar": "assets/hikes_pictures/avatar-default.png",
+      "hike_banner": "assets/hikes_pictures/avatar-default.png",
+      "hike_difficulty": "Non Défini",
+      "hike_distance": "0,00",
+      "hike_duration": "00h 00min",
+      "hike_elevation": {
+        "positive_elevation": 0,
+        "negative_elevation": 0
+      },
+      "hike_description": {
+        "hike_intro": "Description de la randonnée",
+        "hike_paragraph": [],
+        "hike_point_of_interest": []
+      }
+    },
+    {
+      "id": "4",
+      "hike_name": "Nom de la randonnée",
+      "canton": {
+        "name": "Non Défini",
+        "badge": "assets/canton_badges/default.svg"
+      },
+      "map_location": "assets/hikes_pictures/avatar-default.png",
+      "avatar": "assets/hikes_pictures/avatar-default.png",
+      "hike_banner": "assets/hikes_pictures/avatar-default.png",
+      "hike_difficulty": "Non Défini",
+      "hike_distance": "0,00",
+      "hike_duration": "00h 00min",
+      "hike_elevation": {
+        "positive_elevation": 0,
+        "negative_elevation": 0
+      },
+      "hike_description": {
+        "hike_intro": "Description de la randonnée",
+        "hike_paragraph": [],
+        "hike_point_of_interest": []
+      }
+    },
+    {
+      "id": "5",
+      "hike_name": "Nom de la randonnée",
+      "canton": {
+        "name": "Non Défini",
+        "badge": "assets/canton_badges/default.svg"
+      },
+      "map_location": "assets/hikes_pictures/avatar-default.png",
+      "avatar": "assets/hikes_pictures/avatar-default.png",
+      "hike_banner": "assets/hikes_pictures/avatar-default.png",
+      "hike_difficulty": "Non Défini",
+      "hike_distance": "0,00",
+      "hike_duration": "00h 00min",
+      "hike_elevation": {
+        "positive_elevation": 0,
+        "negative_elevation": 0
+      },
+      "hike_description": {
+        "hike_intro": "Description de la randonnée",
+        "hike_paragraph": [],
+        "hike_point_of_interest": []
+      }
+    },
+    {
+      "id": "6",
+      "hike_name": "Nom de la randonnée",
+      "canton": {
+        "name": "Non Défini",
+        "badge": "assets/canton_badges/default.svg"
+      },
+      "map_location": "assets/hikes_pictures/avatar-default.png",
+      "avatar": "assets/hikes_pictures/avatar-default.png",
+      "hike_banner": "assets/hikes_pictures/avatar-default.png",
+      "hike_difficulty": "Non Défini",
+      "hike_distance": "0,00",
+      "hike_duration": "00h 00min",
+      "hike_elevation": {
+        "positive_elevation": 0,
+        "negative_elevation": 0
+      },
+      "hike_description": {
+        "hike_intro": "Description de la randonnée",
+        "hike_paragraph": [],
+        "hike_point_of_interest": []
+      }
+    },
+    {
+      "id": "7",
+      "hike_name": "Nom de la randonnée",
+      "canton": {
+        "name": "Non Défini",
+        "badge": "assets/canton_badges/default.svg"
+      },
+      "map_location": "assets/hikes_pictures/avatar-default.png",
+      "avatar": "assets/hikes_pictures/avatar-default.png",
+      "hike_banner": "assets/hikes_pictures/avatar-default.png",
+      "hike_difficulty": "Non Défini",
+      "hike_distance": "0,00",
+      "hike_duration": "00h 00min",
+      "hike_elevation": {
+        "positive_elevation": 0,
+        "negative_elevation": 0
+      },
+      "hike_description": {
+        "hike_intro": "Description de la randonnée",
+        "hike_paragraph": [],
+        "hike_point_of_interest": []
+      }
+    },
+    {
+      "id": "8",
+      "hike_name": "Nom de la randonnée",
+      "canton": {
+        "name": "Non Défini",
+        "badge": "assets/canton_badges/default.svg"
+      },
+      "map_location": "assets/hikes_pictures/avatar-default.png",
+      "avatar": "assets/hikes_pictures/avatar-default.png",
+      "hike_banner": "assets/hikes_pictures/avatar-default.png",
+      "hike_difficulty": "Non Défini",
+      "hike_distance": "0,00",
+      "hike_duration": "00h 00min",
+      "hike_elevation": {
+        "positive_elevation": 0,
+        "negative_elevation": 0
+      },
+      "hike_description": {
+        "hike_intro": "Description de la randonnée",
+        "hike_paragraph": [],
+        "hike_point_of_interest": []
+      }
+    },
+    {
+      "id": "9",
+      "hike_name": "Nom de la randonnée",
+      "canton": {
+        "name": "Non Défini",
+        "badge": "assets/canton_badges/default.svg"
+      },
+      "map_location": "assets/hikes_pictures/avatar-default.png",
+      "avatar": "assets/hikes_pictures/avatar-default.png",
+      "hike_banner": "assets/hikes_pictures/avatar-default.png",
+      "hike_difficulty": "Non Défini",
+      "hike_distance": "0,00",
+      "hike_duration": "00h 00min",
+      "hike_elevation": {
+        "positive_elevation": 0,
+        "negative_elevation": 0
+      },
+      "hike_description": {
+        "hike_intro": "Description de la randonnée",
+        "hike_paragraph": [],
+        "hike_point_of_interest": []
+      }
+    },
+    {
+      "id": "10",
+      "hike_name": "Nom de la randonnée",
+      "canton": {
+        "name": "Non Défini",
+        "badge": "assets/canton_badges/default.svg"
+      },
+      "map_location": "assets/hikes_pictures/avatar-default.png",
+      "avatar": "assets/hikes_pictures/avatar-default.png",
+      "hike_banner": "assets/hikes_pictures/avatar-default.png",
+      "hike_difficulty": "Non Défini",
+      "hike_distance": "0,00",
+      "hike_duration": "00h 00min",
+      "hike_elevation": {
+        "positive_elevation": 0,
+        "negative_elevation": 0
+      },
+      "hike_description": {
+        "hike_intro": "Description de la randonnée",
+        "hike_paragraph": [],
+        "hike_point_of_interest": []
+      }
+    },
+    {
+      "id": "11",
+      "hike_name": "Nom de la randonnée",
+      "canton": {
+        "name": "Non Défini",
+        "badge": "assets/canton_badges/default.svg"
+      },
+      "map_location": "assets/hikes_pictures/avatar-default.png",
+      "avatar": "assets/hikes_pictures/avatar-default.png",
+      "hike_banner": "assets/hikes_pictures/avatar-default.png",
+      "hike_difficulty": "Non Défini",
+      "hike_distance": "0,00",
+      "hike_duration": "00h 00min",
+      "hike_elevation": {
+        "positive_elevation": 0,
+        "negative_elevation": 0
+      },
+      "hike_description": {
+        "hike_intro": "Description de la randonnée",
+        "hike_paragraph": [],
+        "hike_point_of_interest": []
+      }
+    },
+    {
+      "id": "12",
+      "hike_name": "Nom de la randonnée",
+      "canton": {
+        "name": "Non Défini",
+        "badge": "assets/canton_badges/default.svg"
+      },
+      "map_location": "assets/hikes_pictures/avatar-default.png",
+      "avatar": "assets/hikes_pictures/avatar-default.png",
+      "hike_banner": "assets/hikes_pictures/avatar-default.png",
+      "hike_difficulty": "Non Défini",
+      "hike_distance": "0,00",
+      "hike_duration": "00h 00min",
       "hike_elevation": {
         "positive_elevation": 0,
         "negative_elevation": 0

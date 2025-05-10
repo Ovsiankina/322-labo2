@@ -6,9 +6,11 @@ export interface Hike {
   id: number;
   hike_name: string;
   hike_difficulty: string;
-  hike_distance: number;
+  hike_distance: string;
   hike_duration: string;
   hike_banner: string;
+  avatar: string;
+  card_picture: string;
   hike_elevation: {
     positive_elevation: number;
     negative_elevation: number;

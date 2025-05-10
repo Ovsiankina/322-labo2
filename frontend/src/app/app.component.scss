@@ -18,11 +18,13 @@ router-outlet {
 }
 
 .cards-container {
-  flex: 1;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
-  padding: 16px;
-  background-color: #f5f5f5;
+  gap: 24px;
+}
+
+.hike-card {
+  flex: 1 1 22%; // ou calc(25% - gap)
+  min-width: 0;
+  max-width: 100%;
 }

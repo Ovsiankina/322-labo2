@@ -4,7 +4,6 @@ import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterModule } from '@angular/router';
-import { HikeDetailComponent } from '../../../component/hike-detail/hike-detail.component';
 import { Hike, HikeService } from '../../../services/hike.service';
 
 interface Canton {
@@ -22,7 +21,6 @@ interface Elevation {
   standalone: true,
   imports: [
     CommonModule,
-    HikeDetailComponent,
     MatCardModule,
     MatButtonModule,
     MatIconModule,

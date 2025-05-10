@@ -6,16 +6,17 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #f5f5f5;
+  background-color: #e49c9c;
   border-radius: 16px;
   margin: 16px;
   color: #666;
   font-size: 16px;
 }
 
-.card {
+/* .card {
   width: 360px;
-  background-color: white;
+  height: 480px;
+  background-color: rgb(30, 181, 219);
   border-radius: 16px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -87,26 +88,26 @@
 }
 
 .hike-card {
-  max-width: 400px;
+  max-width: 360px;
+  height: 480px;
   margin: 16px;
-  transition: transform 0.2s;
+  background-color: rgb(30, 181, 219);
 
-  &:hover {
-    transform: translateY(-4px);
-  }
+
 
   img[mat-card-image] {
     height: 200px;
     object-fit: cover;
   }
-}
-
-.badge {
-  display: inline-block;
-  padding: 4px 8px;
-  border-radius: 4px;
-  color: white;
-  font-size: 0.9em;
+  img[canton-badge] {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    width: 55px;
+    height: 69px;
+    object-fit: contain;
+  }
 }
 
 .hike-details {
@@ -114,12 +115,13 @@
 
   .detail-item {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     margin: 8px 0;
 
     mat-icon {
       margin-right: 8px;
-      color: #666;
+      color: #000000;
     }
   }
 }
@@ -128,4 +130,30 @@ mat-card-actions {
   padding: 16px;
   display: flex;
   justify-content: flex-end;
+  border-radius: 16px;
+}
+ */
+
+.hike-card {
+  position: relative;
+  width: 360px;
+  height: 480px;
+  margin: 16px;
+  background-color: $primary-color;
+  border-radius: 12px;
+
+  img[mat-card-image] {
+    height: 200px;
+    object-fit: cover;
+  }
+  img[canton-badge] {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    width: 55px;
+    height: 69px;
+  }
 }

@@ -15,6 +15,6 @@ type State = 'On' | 'Off';
 })
 export class TopAppBarExtandedComponent {
   @Input() connected: State = 'Off';
-  @Input() searchBar: State = 'On';
+  @Input() searchBar: State = 'Off';
   @Input() noMatct: State = 'Off';
 }
