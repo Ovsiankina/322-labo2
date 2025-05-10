@@ -1,7 +1,7 @@
 {
   "hikes": [
     {
-      "hike_id": "1",
+      "id": "1",
       "hike_name": "Moudon par la petite porte",
       "canton": {
         "name": "Vaud",
@@ -10,11 +10,11 @@
       "map_location": "asset/pictures_hiking_1/carte.png",
       "hike_banner": "asset/pictures_hiking_1/banniere.png",
       "hike_difficulty": "Facile",
-      "hike_distance": "6,10",
+      "hike_distance": 6.1,
       "hike_duration": "2h15",
       "hike_elevation": {
-        "positive_elevation": "72",
-        "negative_elevation": "72"
+        "positive_elevation": 72,
+        "negative_elevation": 72
       },
       "hike_description": {
         "hike_intro": "La ville haute de l'ancienne «capitale» du pays de Vaud savoyard constitue un ensemble architectural exceptionnel du Moyen-Âge et de l'Ancien Régime. Invitation à le parcourir sous tous ses angles.",
@@ -80,31 +80,31 @@
         "hike_point_of_interest": [
           {
             "id": "1",
-            "title": "Point d’intérêt A",
+            "title": "Point d'intérêt A",
             "description": "Caché par la verdure, le petit pont en dos d'âne qui franchit le confluent du Carrouge et de la Bressonne a conservé à son sommet la stèle et l'inscription en capitales romaines rappelant qu'il a été construit par ordre du trésorier de la puissante République de Berne et sous la protection de Dieu",
             "picture_location": "asset/pictures_hiking_1/A.png"
           },
           {
             "id": "2",
-            "title": "Point d’intérêt B",
+            "title": "Point d'intérêt B",
             "description": "Vue sur le quartier du Vieux-Bourg et le château de Carrouge depuis le chemin de Valacrêt. Les maisons du Vieux-Bourg dominant la falaise possèdent souvent deux niveaux de caves, en partie taillés dans la molasse.",
             "picture_location": "asset/pictures_hiking_1/B.png"
           },
           {
             "id": "3",
-            "title": "Point d’intérêt C",
+            "title": "Point d'intérêt C",
             "description": "Vue depuis la terrasse du château de Carrouge sur le Vieux-Bourg, sur la route d'Hermenches et le chemin de Valacrêt.",
             "picture_location": "asset/pictures_hiking_1/C.png"
           },
           {
             "id": "4",
-            "title": "Point d’intérêt D",
+            "title": "Point d'intérêt D",
             "description": "Le poreau qui soutient depuis 1646 le grand avant-roir de la maison bernoises est en fait plutôt caractéristique des domes genevois. \n Cette toiture imposante abrite en réalité trois maisons d'origine médiévale. bien visibles au niveau des caves et à l'arrière.",
             "picture_location": "asset/pictures_hiking_1/D.png"
           },
           {
             "id": "5",
-            "title": "Point d’intérêt E",
+            "title": "Point d'intérêt E",
             "description": "La statue de la Justice est, comme celle de Moise, une ceuvre de Laurent Permud de 1559. Al'arrière, la belle fenêtre gothique apuètrepercée dans l'enceinte de Rotto-Borgeau lorsque celle-ci a été englobée dans un nouvel agrandissement de la ville",
             "picture_location": "asset/pictures_hiking_1/E.png"
           }
@@ -112,100 +112,48 @@
       }
     },
     {
-      "hike_id": "2",
+      "id": "2",
       "hike_name": "Nom de la randonnée",
-      "canton": "Canton",
-      "map_location": "c:/Users/User/Desktop/322-labo2/Map.png",
-      "hike_description": "Description de la randonnée",
+      "canton": {
+        "name": "Canton",
+        "badge": "asset/canton_badges/default.svg"
+      },
+      "map_location": "asset/pictures_hiking_2/carte.png",
+      "hike_banner": "asset/pictures_hiking_2/banniere.png",
       "hike_difficulty": "Difficulté de la randonnée",
-      "hike_distance": "Distance de la randonnée",
+      "hike_distance": 0,
       "hike_duration": "Durée de la randonnée",
-      "hike_elevation": [
-        {
-          "positive_elevation": "72",
-          "negative_elevation": "72"
-        }
-      ],
-      "pictures": [
-        {
-          "id": "7",
-          "name": "Nom de la photo",
-          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture1.png"
-        },
-        {
-          "id": "8",
-          "name": "Nom de la photo",
-          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture2.png"
-        },
-        {
-          "id": "9",
-          "name": "Nom de la photo",
-          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture3.png"
-        },
-        {
-          "id": "10",
-          "name": "Nom de la photo",
-          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture4.png"
-        },
-        {
-          "id": "11",
-          "name": "Nom de la photo",
-          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture5.png"
-        },
-        {
-          "id": "12",
-          "name": "Nom de la photo",
-          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture6.png"
-        }
-      ]
+      "hike_elevation": {
+        "positive_elevation": 72,
+        "negative_elevation": 72
+      },
+      "hike_description": {
+        "hike_intro": "Description de la randonnée",
+        "hike_paragraph": [],
+        "hike_point_of_interest": []
+      }
     },
     {
-      "hike_id": "3",
+      "id": "3",
       "hike_name": "Nom de la randonnée",
-      "canton": "Canton",
-      "map_location": "c:/Users/User/Desktop/322-labo2/Map.png",
-      "hike_description": "Description de la randonnée",
+      "canton": {
+        "name": "Canton",
+        "badge": "asset/canton_badges/default.svg"
+      },
+      "map_location": "asset/pictures_hiking_3/carte.png",
+      "hike_banner": "asset/pictures_hiking_3/banniere.png",
       "hike_difficulty": "Difficulté de la randonnée",
-      "hike_distance": "Distance de la randonnée",
+      "hike_distance": 0,
       "hike_duration": "Durée de la randonnée",
-      "hike_elevation": [
-        {
-          "positive_elevation": "Dénivelé positif de la randonnée",
-          "negative_elevation": "Dénivelé négatif de la randonnée"
-        }
-      ],
-      "pictures": [
-        {
-          "id": "13",
-          "name": "Nom de la photo",
-          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture1.png"
-        },
-        {
-          "id": "14",
-          "name": "Nom de la photo",
-          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture2.png"
-        },
-        {
-          "id": "15",
-          "name": "Nom de la photo",
-          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture3.png"
-        },
-        {
-          "id": "16",
-          "name": "Nom de la photo",
-          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture4.png"
-        },
-        {
-          "id": "17",
-          "name": "Nom de la photo",
-          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture5.png"
-        },
-        {
-          "id": "18",
-          "name": "Nom de la photo",
-          "picture_location": "c:/Users/User/Desktop/322-labo2/Picture6.png"
-        }
-      ]
+      "hike_elevation": {
+        "positive_elevation": 0,
+        "negative_elevation": 0
+      },
+      "hike_description": {
+        "hike_intro": "Description de la randonnée",
+        "hike_paragraph": [],
+        "hike_point_of_interest": []
+      }
     }
   ]
 }

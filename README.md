@@ -11,19 +11,22 @@ Run `docker compose up -d` to start the application with docker
 
 ## Docker cheatsheet
 
-**Start the app**
+### Start the app
+
 ```bash
 docker compose up -d
 ```
+
 or the GUI
 
-**Execute a command in the container**
+### Execute a command in the container
+
 ```bash
 docker exec -it <container_name> <your_command>
 ```
 
-> [!NOTE]
-> *Exemple: Enter the container shell*
+> [!NOTE] > _Exemple: Enter the container shell_
+>
 > ```bash
 > docker exec -it <container_name> sh
 > ```

@@ -1,25 +1,55 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
+import { HikeDetailComponent } from '../../../component/hike-detail/hike-detail.component';
+import { Hike, HikeService } from '../../../services/hike.service';
+
+interface Canton {
+  name: string;
+  badge: string;
+}
+
+interface Elevation {
+  positive_elevation: string;
+  negative_elevation: string;
+}
 
 @Component({
   selector: 'app-card',
   standalone: true,
-  imports: [CommonModule, MatCardModule, MatButtonModule, MatIconModule],
+  imports: [
+    CommonModule,
+    HikeDetailComponent,
+    MatCardModule,
+    MatButtonModule,
+    MatIconModule,
+    RouterModule,
+  ],
   templateUrl: './card.component.html',
-  styleUrl: './card.component.scss',
+  styleUrls: ['./card.component.scss'],
 })
-export class CardComponent {
-  @Input() title: string = '';
-  @Input() subtitle: string = '';
-  @Input() imageUrl: string = '';
-  @Input() monsterName: string = '';
-  @Input() hp: number = 0;
-  @Input() energyType: string = '';
-  @Input() attackName: string = '';
-  @Input() attackCost: number = 0;
-  @Input() attackDamage: number = 0;
-  @Input() attackDescription: string = '';
+export class CardComponent implements OnInit {
+  @Input() hikeId: number = 0;
+  hike: Hike | null = null;
+
+  constructor(private hikeService: HikeService) {}
+
+  ngOnInit() {
+    if (this.hikeId) {
+      this.hikeService.getHikeById(this.hikeId).subscribe({
+        next: (data) => {
+          this.hike = data;
+        },
+        error: (error) => {
+          console.error(
+            'Erreur lors de la récupération de la randonnée:',
+            error
+          );
+        },
+      });
+    }
+  }
 }

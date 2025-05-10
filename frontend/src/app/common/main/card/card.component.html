@@ -1,10 +1,46 @@
-<p>card works!</p>
-<div class="card">
-  <div>
-    <img src="/assets/pictures_hiking_1/banniere.png" alt="banniere" />
-  </div>
-  <div class="card-header"></div>
-  <div class="card-body">
-    <p>Card Body</p>
-  </div>
-</div>
+<div *ngIf="!hike" class="loading">Chargement des données...</div>
+
+<mat-card *ngIf="hike" class="hike-card">
+  <img mat-card-image [src]="hike.hike_banner" [alt]="hike.hike_name" />
+
+  <mat-card-header>
+    <mat-card-title>{{ hike.hike_name }}</mat-card-title>
+    <mat-card-subtitle>
+      <span class="badge" [style.background-color]="hike.canton.badge">
+        {{ hike.canton.name }}
+      </span>
+    </mat-card-subtitle>
+  </mat-card-header>
+
+  <mat-card-content>
+    <div class="hike-details">
+      <div class="detail-item">
+        <mat-icon>terrain</mat-icon>
+        <span>Difficulté: {{ hike.hike_difficulty }}</span>
+      </div>
+      <div class="detail-item">
+        <mat-icon>straighten</mat-icon>
+        <span>Distance: {{ hike.hike_distance }}km</span>
+      </div>
+      <div class="detail-item">
+        <mat-icon>schedule</mat-icon>
+        <span>Durée: {{ hike.hike_duration }}</span>
+      </div>
+      <div class="detail-item">
+        <mat-icon>trending_up</mat-icon>
+        <span>Dénivelé +: {{ hike.hike_elevation.positive_elevation }}m</span>
+      </div>
+      <div class="detail-item">
+        <mat-icon>trending_down</mat-icon>
+        <span>Dénivelé -: {{ hike.hike_elevation.negative_elevation }}m</span>
+      </div>
+    </div>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <button mat-button color="primary" [routerLink]="['/hike', hike.id]">
+      <mat-icon>hiking</mat-icon>
+      Voir les détails
+    </button>
+  </mat-card-actions>
+</mat-card>

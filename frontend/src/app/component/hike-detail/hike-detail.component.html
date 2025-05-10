@@ -1,0 +1,14 @@
+<div class="hike-detail" *ngIf="hike">
+  <h2>{{ hike.hike_name }}</h2>
+  <div class="hike-info">
+    <p><strong>Difficulty:</strong> {{ hike.hike_difficulty }}</p>
+    <p><strong>Distance:</strong> {{ hike.hike_distance }} km</p>
+    <p><strong>Duration:</strong> {{ hike.hike_duration }}</p>
+    <p>
+      <strong>Elevation:</strong> +{{ hike.hike_elevation.positive_elevation }}m
+      / -{{ hike.hike_elevation.negative_elevation }}m
+    </p>
+    <p><strong>Canton:</strong> {{ hike.canton.name }}</p>
+  </div>
+  <img [src]="hike.hike_banner" [alt]="hike.hike_name" class="hike-banner" />
+</div>
