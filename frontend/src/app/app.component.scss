@@ -1,4 +1,4 @@
-@use "../../../../styles" as styles;
+@use "../styles.scss" as styles;
 
 :host {
   display: block;
@@ -8,13 +8,21 @@
 
 router-outlet {
   display: block;
-  padding-top: 68px; // Pour compenser la hauteur de la barre de navigation
+  padding-top: 5px;
 }
 
 .content {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .cards-container {

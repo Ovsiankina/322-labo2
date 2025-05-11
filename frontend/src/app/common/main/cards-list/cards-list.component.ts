@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CardComponent } from '../card/card.component';
 
@@ -10,6 +10,8 @@ import { CardComponent } from '../card/card.component';
   styleUrl: './cards-list.component.scss',
 })
 export class CardsListComponent {
+  @Input() isDetailView: boolean = false;
+
   hikes = [
     { id: 1 },
     { id: 2 },

@@ -1,0 +1,5 @@
+<div class="stars">
+  <mat-icon *ngFor="let star of stars" [style.color]="getStarColor(star)">
+    {{ getStarIcon(star) }}
+  </mat-icon>
+</div>

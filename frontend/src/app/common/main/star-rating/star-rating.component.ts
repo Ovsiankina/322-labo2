@@ -6,26 +6,8 @@ import { MatIconModule } from '@angular/material/icon';
   selector: 'app-star-rating',
   standalone: true,
   imports: [CommonModule, MatIconModule],
-  template: `
-    <div class="stars">
-      <mat-icon *ngFor="let star of stars" [style.color]="getStarColor(star)">
-        {{ getStarIcon(star) }}
-      </mat-icon>
-    </div>
-  `,
-  styles: [
-    `
-      .stars {
-        display: flex;
-        gap: 2px;
-      }
-      mat-icon {
-        font-size: 20px;
-        width: 20px;
-        height: 20px;
-      }
-    `,
-  ],
+  templateUrl: './star-rating.component.html',
+  styleUrls: ['./star-rating.component.scss'],
 })
 export class StarRatingComponent {
   @Input() rating: number = 0;

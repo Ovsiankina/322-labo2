@@ -1,0 +1,41 @@
+.toggle-container {
+  margin-top: 1rem;
+  display: flex;
+  width: 100%;
+  height: 32px;
+  border-radius: 16px;
+  border: 1.5px solid #b39ddb;
+  overflow: hidden;
+  background: transparent;
+  font-size: 15px;
+  user-select: none;
+}
+.toggle-tab {
+  flex: 1 1 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: background 0.2s;
+  height: 100%;
+  color: #4a148c;
+  background: #fff;
+}
+.toggle-tab.selected {
+  background: #ede7f6;
+  color: #4a148c;
+  font-weight: 600;
+}
+.toggle-tab.left {
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+.toggle-tab.right {
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+.toggle-tab mat-icon {
+  font-size: 18px;
+  vertical-align: middle;
+}

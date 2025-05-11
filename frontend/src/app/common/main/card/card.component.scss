@@ -7,16 +7,18 @@ mat-card-actions {
 }
 
 .hike-card {
-  width: 360px;
-  height: 480px;
-  background-color: styles.$light-color;
+  width: 100%;
+  height: 400px;
+  background-color: styles.$primary-color;
   border-radius: 12px;
   padding: 0;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 
   img[mat-card-image] {
     width: 100%;
-    height: 252px;
+    height: 50%;
     object-fit: cover;
     display: block;
   }
@@ -31,6 +33,49 @@ mat-card-actions {
     width: 55px;
     height: 69px;
   }
+
+  mat-card-header {
+    padding: 8px 16px;
+
+    mat-card-title {
+      font-size: 1.1rem;
+      line-height: 1.2;
+      margin: 0;
+    }
+  }
+
+  mat-card-content {
+    flex: 1;
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .hike-details {
+    .detail-item {
+      margin: 4px 0;
+      font-size: 0.9rem;
+    }
+
+    mat-icon {
+      font-size: 1.1rem;
+      width: 1.1rem;
+      height: 1.1rem;
+    }
+  }
+
+  .hike-information {
+    margin-top: 1.5rem;
+    .information-title {
+      font-size: 0.85rem;
+    }
+
+    .elevation-item-content,
+    .historicity-note-item {
+      font-size: 0.85rem;
+    }
+  }
 }
 
 .button {
@@ -42,20 +87,20 @@ mat-card-actions {
 
 .detail-item {
   display: flex;
+  padding: 0.1rem 0; // a voir
   justify-content: space-between;
   align-items: center;
-  margin: 8px 0;
+  margin: 0.01rem 0;
 
   mat-icon {
-    margin-right: 8px;
+    margin-right: 0.01rem;
     color: #000000;
   }
 }
 
 mat-divider {
-  margin: 8px 0;
+  margin: 8px auto;
   width: 90%;
-  align-self: center;
   color: styles.$dark-color;
 }
 

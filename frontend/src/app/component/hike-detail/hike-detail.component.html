@@ -1,14 +1,63 @@
-<div class="hike-detail" *ngIf="hike">
-  <h2>{{ hike.hike_name }}</h2>
-  <div class="hike-info">
-    <p><strong>Difficulty:</strong> {{ hike.hike_difficulty }}</p>
-    <p><strong>Distance:</strong> {{ hike.hike_distance }} km</p>
-    <p><strong>Duration:</strong> {{ hike.hike_duration }}</p>
-    <p>
-      <strong>Elevation:</strong> +{{ hike.hike_elevation.positive_elevation }}m
-      / -{{ hike.hike_elevation.negative_elevation }}m
-    </p>
-    <p><strong>Canton:</strong> {{ hike.canton.name }}</p>
+<div class="selected-hike">
+  <app-cards-list [isDetailView]="true"></app-cards-list>
+
+  <div class="hike-description" *ngIf="hike">
+    <div class="hike-banner-header">
+      <img
+        [src]="hike.hike_banner"
+        [alt]="hike.hike_name"
+        class="hike-banner"
+      />
+      <div class="hike-banner-with-text">
+        <div class="hike-banner-content-header">
+          <img
+            canton-badge
+            [src]="hike.canton.badge"
+            [alt]="hike.canton.name"
+          />
+          <mat-card-title>{{ hike.hike_name }}</mat-card-title>
+        </div>
+        <mat-chip-listbox>
+          <mat-chip class="mat-chip"
+            ><mat-icon>directions_walk</mat-icon
+            >{{ hike.hike_duration }}</mat-chip
+          >
+          <mat-chip class="mat-chip"
+            ><mat-icon>route</mat-icon>{{ hike.hike_distance }} km</mat-chip
+          >
+          <mat-chip class="mat-chip"
+            ><mat-icon>fitness_center</mat-icon
+            >{{ hike.hike_difficulty }}</mat-chip
+          >
+        </mat-chip-listbox>
+      </div>
+
+      <div class="hike-info">
+        <div class="hike-info-item">
+          <div id="elevation-item">
+            <mat-divider></mat-divider>
+            <img src="assets/icons/elevation.png" alt="elevation" />
+            <span>Dénivelés</span>
+            <div class="elevation-item-content">
+              <mat-icon>arrow_upward</mat-icon>
+              <span> {{ hike.hike_elevation.positive_elevation }}m</span>
+              <mat-icon>arrow_downward</mat-icon>
+              <span> {{ hike.hike_elevation.negative_elevation }}m</span>
+            </div>
+          </div>
+          <div id="historicity-item">
+            <mat-divider></mat-divider>
+            <mat-icon>auto_stories</mat-icon>
+            <span> Historicité </span>
+            <div class="historicity-note-item">
+              <app-star-rating [rating]="hike.hike_note || 0"></app-star-rating>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <app-description-map-toggle
+      (selectedChange)="onTabChange($event)"
+    ></app-description-map-toggle>
   </div>
-  <img [src]="hike.hike_banner" [alt]="hike.hike_name" class="hike-banner" />
 </div>

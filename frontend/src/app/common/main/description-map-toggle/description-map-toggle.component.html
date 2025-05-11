@@ -1,0 +1,18 @@
+<div class="toggle-container">
+  <div
+    class="toggle-tab left"
+    [class.selected]="selectedTab === 'description'"
+    (click)="select('description')"
+  >
+    <mat-icon>description</mat-icon>
+    <span>Description</span>
+  </div>
+  <div
+    class="toggle-tab right"
+    [class.selected]="selectedTab === 'map'"
+    (click)="select('map')"
+  >
+    <mat-icon>map</mat-icon>
+    <span>Carte</span>
+  </div>
+</div>
