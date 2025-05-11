@@ -1,4 +1,4 @@
-@import "../../../../styles.scss";
+@use "../../../../styles" as styles;
 
 .root {
   padding: 1px;
@@ -10,7 +10,7 @@
   gap: 10px;
   box-sizing: border-box;
   overflow: hidden;
-  background: #ffffff;
+  background: styles.$light-color;
 }
 .rectangle2 {
   display: flex;

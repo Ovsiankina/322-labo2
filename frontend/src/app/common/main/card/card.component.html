@@ -4,8 +4,8 @@
 
   <mat-card-header>
     <mat-card-title>{{ hike.hike_name }}</mat-card-title>
-    <mat-card-subtitle> </mat-card-subtitle>
   </mat-card-header>
+  <mat-divider></mat-divider>
 
   <mat-card-content>
     <div class="hike-details">
@@ -19,13 +19,29 @@
           <span> {{ hike.hike_duration }}</span>
         </div>
       </div>
-      <div class="detail-item">
-        <mat-icon>arrow_upward</mat-icon>
-        <span> {{ hike.hike_elevation.positive_elevation }}m</span>
-      </div>
-      <div class="detail-item">
-        <mat-icon>arrow_downward</mat-icon>
-        <span> {{ hike.hike_elevation.negative_elevation }}m</span>
+      <div class="hike-information">
+        <div class="detail-item information-title">
+          <div id="elevation-item">
+            <img src="assets/icons/elevation.png" alt="elevation" />
+            <span>Dénivelés</span>
+          </div>
+          <div id="historicity-item">
+            <mat-icon>auto_stories</mat-icon>
+            <span> Historicité </span>
+          </div>
+        </div>
+        <div class="detail-item">
+          <div class="elevation-item-content">
+            <mat-icon>arrow_upward</mat-icon>
+            <span> {{ hike.hike_elevation.positive_elevation }}m</span>
+            <span> • </span>
+            <mat-icon>arrow_downward</mat-icon>
+            <span> {{ hike.hike_elevation.negative_elevation }}m</span>
+          </div>
+          <div class="historicity-note-item">
+            <app-star-rating [rating]="hike.hike_note || 0"></app-star-rating>
+          </div>
+        </div>
       </div>
     </div>
   </mat-card-content>

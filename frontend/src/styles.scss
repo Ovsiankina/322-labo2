@@ -1,5 +1,5 @@
 // Variables
-$primary-color: #fef7ff;
+$primary-color: #007bff;
 $secondary-color: #6c757d;
 $success-color: #28a745;
 $danger-color: #dc3545;
@@ -98,8 +98,8 @@ body {
 // Colonnes
 @for $i from 1 through 12 {
   .col-#{$i} {
-    flex: 0 0 percentage(calc($i / 12));
-    max-width: percentage(calc($i / 12));
+    flex: 0 0 percentage($i / 12);
+    max-width: percentage($i / 12);
     padding-right: 15px;
     padding-left: 15px;
   }

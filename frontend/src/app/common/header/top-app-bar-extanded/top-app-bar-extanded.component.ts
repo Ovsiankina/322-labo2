@@ -13,8 +13,4 @@ type State = 'On' | 'Off';
   imports: [LogoComponent, FormsModule, CommonModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class TopAppBarExtandedComponent {
-  @Input() connected: State = 'Off';
-  @Input() searchBar: State = 'Off';
-  @Input() noMatct: State = 'Off';
-}
+export class TopAppBarExtandedComponent {}

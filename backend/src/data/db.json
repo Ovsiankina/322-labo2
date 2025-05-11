@@ -17,6 +17,7 @@
         "positive_elevation": 72,
         "negative_elevation": 72
       },
+      "hike_note": 4.5,
       "hike_description": {
         "hike_intro": "La ville haute de l'ancienne «capitale» du pays de Vaud savoyard constitue un ensemble architectural exceptionnel du Moyen-Âge et de l'Ancien Régime. Invitation à le parcourir sous tous ses angles.",
         "hike_paragraph": [
@@ -129,6 +130,7 @@
         "positive_elevation": 0,
         "negative_elevation": 0
       },
+      "hike_note": null,
       "hike_description": {
         "hike_intro": "Description de la randonnée",
         "hike_paragraph": [],
@@ -152,6 +154,7 @@
         "positive_elevation": 0,
         "negative_elevation": 0
       },
+      "hike_note": null,
       "hike_description": {
         "hike_intro": "Description de la randonnée",
         "hike_paragraph": [],
@@ -175,6 +178,7 @@
         "positive_elevation": 0,
         "negative_elevation": 0
       },
+      "hike_note": null,
       "hike_description": {
         "hike_intro": "Description de la randonnée",
         "hike_paragraph": [],
@@ -198,6 +202,7 @@
         "positive_elevation": 0,
         "negative_elevation": 0
       },
+      "hike_note": null,
       "hike_description": {
         "hike_intro": "Description de la randonnée",
         "hike_paragraph": [],
@@ -221,6 +226,7 @@
         "positive_elevation": 0,
         "negative_elevation": 0
       },
+      "hike_note": null,
       "hike_description": {
         "hike_intro": "Description de la randonnée",
         "hike_paragraph": [],
@@ -244,6 +250,7 @@
         "positive_elevation": 0,
         "negative_elevation": 0
       },
+      "hike_note": null,
       "hike_description": {
         "hike_intro": "Description de la randonnée",
         "hike_paragraph": [],
@@ -267,6 +274,7 @@
         "positive_elevation": 0,
         "negative_elevation": 0
       },
+      "hike_note": null,
       "hike_description": {
         "hike_intro": "Description de la randonnée",
         "hike_paragraph": [],
@@ -290,6 +298,7 @@
         "positive_elevation": 0,
         "negative_elevation": 0
       },
+      "hike_note": null,
       "hike_description": {
         "hike_intro": "Description de la randonnée",
         "hike_paragraph": [],
@@ -313,6 +322,7 @@
         "positive_elevation": 0,
         "negative_elevation": 0
       },
+      "hike_note": null,
       "hike_description": {
         "hike_intro": "Description de la randonnée",
         "hike_paragraph": [],
@@ -336,6 +346,7 @@
         "positive_elevation": 0,
         "negative_elevation": 0
       },
+      "hike_note": null,
       "hike_description": {
         "hike_intro": "Description de la randonnée",
         "hike_paragraph": [],
@@ -359,6 +370,7 @@
         "positive_elevation": 0,
         "negative_elevation": 0
       },
+      "hike_note": null,
       "hike_description": {
         "hike_intro": "Description de la randonnée",
         "hike_paragraph": [],

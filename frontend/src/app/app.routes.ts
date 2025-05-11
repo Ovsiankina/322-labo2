@@ -4,6 +4,5 @@ import { HikeDetailComponent } from './component/hike-detail/hike-detail.compone
 
 export const routes: Routes = [
   { path: '', component: CardsListComponent },
-  { path: 'hikes', component: CardsListComponent },
   { path: 'hikes/:id', component: HikeDetailComponent },
 ];

@@ -1,9 +1,9 @@
-@import "../styles.scss";
+@use "../../../../styles" as styles;
 
 :host {
   display: block;
   min-height: 100vh;
-  background-color: $light-color;
+  background-color: styles.$light-color;
 }
 
 router-outlet {
@@ -21,6 +21,7 @@ router-outlet {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
+  justify-content: center;
 }
 
 .hike-card {

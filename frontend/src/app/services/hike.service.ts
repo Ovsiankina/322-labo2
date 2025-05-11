@@ -11,6 +11,7 @@ export interface Hike {
   hike_banner: string;
   avatar: string;
   card_picture: string;
+  hike_note: number | null;
   hike_elevation: {
     positive_elevation: number;
     negative_elevation: number;

@@ -5,6 +5,8 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterModule } from '@angular/router';
 import { Hike, HikeService } from '../../../services/hike.service';
+import { MatDividerModule } from '@angular/material/divider';
+import { StarRatingComponent } from '../star-rating/star-rating.component';
 
 interface Canton {
   name: string;
@@ -25,6 +27,8 @@ interface Elevation {
     MatButtonModule,
     MatIconModule,
     RouterModule,
+    MatDividerModule,
+    StarRatingComponent,
   ],
   templateUrl: './card.component.html',
   styleUrls: ['./card.component.scss'],
