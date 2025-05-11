@@ -1,0 +1,37 @@
+<div class="description-container mat-typography">
+  <h1 class="mat-display-medium">{{ hike.hike_name }}</h1>
+  <ng-container *ngFor="let block of hike.hike_description">
+    <ng-container [ngSwitch]="block.type">
+      <h2 *ngSwitchCase="'title'" class="mat-headline-medium">
+        {{ block.content }}
+      </h2>
+      <p *ngSwitchCase="'intro'" class="mat-title-medium intro">
+        {{ block.content }}
+      </p>
+      <p *ngSwitchCase="'paragraph'" class="mat-body-large">
+        {{ block.content }}
+      </p>
+      <mat-card
+        *ngSwitchCase="'point_of_interest'"
+        class="poi-card"
+        appearance="outlined"
+      >
+        <div class="poi-content">
+          <img
+            mat-card-image
+            [src]="block.picture_location"
+            [alt]="block.title"
+          />
+          <div>
+            <h3 class="mat-title-large">{{ block.title }}</h3>
+            <p class="mat-body-medium">{{ block.description }}</p>
+          </div>
+        </div>
+      </mat-card>
+      <mat-divider *ngSwitchCase="'divider'"></mat-divider>
+      <p *ngSwitchCase="'outro'" class="mat-caption outro">
+        {{ block.content }}
+      </p>
+    </ng-container>
+  </ng-container>
+</div>

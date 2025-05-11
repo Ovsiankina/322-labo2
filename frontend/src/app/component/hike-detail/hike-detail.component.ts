@@ -12,6 +12,8 @@ import { MatChipsModule } from '@angular/material/chips';
 import { StarRatingComponent } from '../../common/main/star-rating/star-rating.component';
 import { CardsListComponent } from '../../common/main/cards-list/cards-list.component';
 import { DescriptionMapToggleComponent } from '../../common/main/description-map-toggle/description-map-toggle.component';
+import { DescriptionComponent } from '../../common/main/description/description.component';
+import { MapComponent } from '../../common/main/map/map.component';
 
 @Component({
   selector: 'app-hike-detail',
@@ -28,12 +30,15 @@ import { DescriptionMapToggleComponent } from '../../common/main/description-map
     StarRatingComponent,
     CardsListComponent,
     DescriptionMapToggleComponent,
+    DescriptionComponent,
+    MapComponent,
   ],
   templateUrl: './hike-detail.component.html',
   styleUrls: ['./hike-detail.component.scss'],
 })
 export class HikeDetailComponent implements OnInit {
   hike: Hike | undefined;
+  selectedTab: 'description' | 'map' = 'description';
 
   constructor(private route: ActivatedRoute, private hikeService: HikeService) {
     console.log('HikeDetailComponent constructor called');
@@ -61,5 +66,6 @@ export class HikeDetailComponent implements OnInit {
 
   onTabChange(tab: string) {
     console.log('Tab changed to:', tab);
+    this.selectedTab = tab as 'description' | 'map';
   }
 }

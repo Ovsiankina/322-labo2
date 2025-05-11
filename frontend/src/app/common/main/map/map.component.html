@@ -1,0 +1,22 @@
+<div class="map-container">
+  <img
+    *ngIf="hike?.map_location"
+    [src]="hike.map_location"
+    [alt]="hike.hike_name + ' carte'"
+    class="map-image"
+  />
+  <button
+    mat-icon-button
+    [matMenuTriggerFor]="menu"
+    class="map-menu-btn"
+    aria-label="Informations de parcours"
+  >
+    <mat-icon>info</mat-icon>
+  </button>
+  <mat-menu #menu="matMenu">
+    <div class="map-info-content" *ngIf="hike?.map_informations; else noInfo">
+      <div [innerHTML]="hike.map_informations"></div>
+    </div>
+    <ng-template #noInfo><span>Aucune information</span></ng-template>
+  </mat-menu>
+</div>
