@@ -57,12 +57,13 @@
       </div>
     </div>
     <app-description-map-toggle
+      [selectedTab]="selectedTab"
       (selectedChange)="onTabChange($event)"
     ></app-description-map-toggle>
     <app-description
       *ngIf="selectedTab === 'description'"
       [hike]="hike"
     ></app-description>
-    <app-map *ngIf="selectedTab === 'map'" [hike]="hike"></app-map>
+    <app-map *ngIf="selectedTab === 'map'" [hike]="hike"> </app-map>
   </div>
 </div>

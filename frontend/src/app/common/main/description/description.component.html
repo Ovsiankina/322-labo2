@@ -2,9 +2,9 @@
   <h1 class="mat-display-medium">{{ hike.hike_name }}</h1>
   <ng-container *ngFor="let block of hike.hike_description">
     <ng-container [ngSwitch]="block.type">
-      <h2 *ngSwitchCase="'title'" class="mat-headline-medium">
+      <!--       <h2 *ngSwitchCase="'title'" class="mat-headline-medium">
         {{ block.content }}
-      </h2>
+      </h2> -->
       <p *ngSwitchCase="'intro'" class="mat-title-medium intro">
         {{ block.content }}
       </p>

@@ -8,16 +8,6 @@ import { Hike, HikeService } from '../../../services/hike.service';
 import { MatDividerModule } from '@angular/material/divider';
 import { StarRatingComponent } from '../star-rating/star-rating.component';
 
-interface Canton {
-  name: string;
-  badge: string;
-}
-
-interface Elevation {
-  positive_elevation: string;
-  negative_elevation: string;
-}
-
 @Component({
   selector: 'app-card',
   standalone: true,

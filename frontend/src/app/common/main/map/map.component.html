@@ -1,22 +1,37 @@
-<div class="map-container">
+<div class="map-container p-2">
   <img
-    *ngIf="hike?.map_location"
-    [src]="hike.map_location"
+    *ngIf="hike?.map_informations"
+    [src]="hike.map_informations.map_picture"
     [alt]="hike.hike_name + ' carte'"
     class="map-image"
+    [class.map-image-brightnessless]="panel.expanded"
   />
-  <button
-    mat-icon-button
-    [matMenuTriggerFor]="menu"
-    class="map-menu-btn"
-    aria-label="Informations de parcours"
-  >
-    <mat-icon>info</mat-icon>
-  </button>
-  <mat-menu #menu="matMenu">
+  <mat-expansion-panel #panel class="map-info-panel">
+    <mat-expansion-panel-header>
+      <mat-panel-title> Description du parcours </mat-panel-title>
+    </mat-expansion-panel-header>
+
     <div class="map-info-content" *ngIf="hike?.map_informations; else noInfo">
-      <div [innerHTML]="hike.map_informations"></div>
+      <div class="info-section">
+        <h4>Carte topographique</h4>
+        <p>{{ hike.map_informations.topographic_map_name }}</p>
+      </div>
+
+      <div class="info-section">
+        <h4>Accès</h4>
+        <p>{{ hike.map_informations.Go_to }}</p>
+      </div>
+
+      <div class="info-section">
+        <h4>Temps de marche</h4>
+        <p>{{ hike.map_informations.walking_time }}</p>
+      </div>
+
+      <div class="info-section">
+        <h4>Restauration</h4>
+        <p>{{ hike.map_informations.get_launch }}</p>
+      </div>
     </div>
     <ng-template #noInfo><span>Aucune information</span></ng-template>
-  </mat-menu>
+  </mat-expansion-panel>
 </div>
