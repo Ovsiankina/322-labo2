@@ -137,7 +137,7 @@
         "get_launch": "Description de la randonnée"
       },
       "avatar": "assets/hikes_pictures/avatar-default.png",
-      "hike_banner": "assets/hikes_pictures/avatar-default.png",
+      "hike_banner": "assets/hikes_pictures/banner-default.png",
       "hike_difficulty": "Non Défini",
       "hike_distance": "0,00",
       "hike_duration": "00h 00min",
@@ -163,7 +163,7 @@
         "get_launch": "Description de la randonnée"
       },
       "avatar": "assets/hikes_pictures/avatar-default.png",
-      "hike_banner": "assets/hikes_pictures/avatar-default.png",
+      "hike_banner": "assets/hikes_pictures/banner-default.png",
       "hike_difficulty": "Non Défini",
       "hike_distance": "0,00",
       "hike_duration": "00h 00min",
@@ -189,7 +189,7 @@
         "get_launch": "Description de la randonnée"
       },
       "avatar": "assets/hikes_pictures/avatar-default.png",
-      "hike_banner": "assets/hikes_pictures/avatar-default.png",
+      "hike_banner": "assets/hikes_pictures/banner-default.png",
       "hike_difficulty": "Non Défini",
       "hike_distance": "0,00",
       "hike_duration": "00h 00min",
@@ -209,7 +209,7 @@
       },
       "map_location": "assets/hikes_pictures/avatar-default.png",
       "avatar": "assets/hikes_pictures/avatar-default.png",
-      "hike_banner": "assets/hikes_pictures/avatar-default.png",
+      "hike_banner": "assets/hikes_pictures/banner-default.png",
       "hike_difficulty": "Non Défini",
       "hike_distance": "0,00",
       "hike_duration": "00h 00min",
@@ -235,7 +235,7 @@
         "get_launch": "Description de la randonnée"
       },
       "avatar": "assets/hikes_pictures/avatar-default.png",
-      "hike_banner": "assets/hikes_pictures/avatar-default.png",
+      "hike_banner": "assets/hikes_pictures/banner-default.png",
       "hike_difficulty": "Non Défini",
       "hike_distance": "0,00",
       "hike_duration": "00h 00min",
@@ -261,7 +261,7 @@
         "get_launch": "Description de la randonnée"
       },
       "avatar": "assets/hikes_pictures/avatar-default.png",
-      "hike_banner": "assets/hikes_pictures/avatar-default.png",
+      "hike_banner": "assets/hikes_pictures/banner-default.png",
       "hike_difficulty": "Non Défini",
       "hike_distance": "0,00",
       "hike_duration": "00h 00min",
@@ -287,7 +287,7 @@
         "get_launch": "Description de la randonnée"
       },
       "avatar": "assets/hikes_pictures/avatar-default.png",
-      "hike_banner": "assets/hikes_pictures/avatar-default.png",
+      "hike_banner": "assets/hikes_pictures/banner-default.png",
       "hike_difficulty": "Non Défini",
       "hike_distance": "0,00",
       "hike_duration": "00h 00min",
@@ -339,7 +339,7 @@
         "get_launch": "Description de la randonnée"
       },
       "avatar": "assets/hikes_pictures/avatar-default.png",
-      "hike_banner": "assets/hikes_pictures/avatar-default.png",
+      "hike_banner": "assets/hikes_pictures/banner-default.png",
       "hike_difficulty": "Non Défini",
       "hike_distance": "0,00",
       "hike_duration": "00h 00min",
@@ -365,7 +365,7 @@
         "get_launch": "Description de la randonnée"
       },
       "avatar": "assets/hikes_pictures/avatar-default.png",
-      "hike_banner": "assets/hikes_pictures/avatar-default.png",
+      "hike_banner": "assets/hikes_pictures/banner-default.png",
       "hike_difficulty": "Non Défini",
       "hike_distance": "0,00",
       "hike_duration": "00h 00min",

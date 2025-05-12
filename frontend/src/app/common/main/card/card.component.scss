@@ -15,6 +15,14 @@ mat-card-actions {
   overflow: hidden;
   display: flex;
   flex-direction: column;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+
+  &.selected {
+    border-color: styles.$secondary-color;
+    box-shadow: 0 0 15px rgba(styles.$secondary-color, 0.3);
+    transform: translateY(-2px);
+  }
 
   img[mat-card-image] {
     width: 100%;

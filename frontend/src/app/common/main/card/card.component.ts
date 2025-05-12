@@ -25,6 +25,7 @@ import { StarRatingComponent } from '../star-rating/star-rating.component';
 })
 export class CardComponent implements OnInit {
   @Input() hikeId: number = 0;
+  @Input() isSelected: boolean = false;
   hike: Hike | null = null;
 
   constructor(private hikeService: HikeService) {}

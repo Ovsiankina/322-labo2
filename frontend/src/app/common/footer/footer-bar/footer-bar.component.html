@@ -1,6 +1,8 @@
-<div class="chrome-footer-bar_347-51702">
+<div class="footer-bar_347-51702">
   <app-arrow-upward
+    *ngIf="showButton"
     [selected]="'Off'"
     class="arrow-upward_347-57083"
+    (click)="scrollToTop()"
   ></app-arrow-upward>
 </div>

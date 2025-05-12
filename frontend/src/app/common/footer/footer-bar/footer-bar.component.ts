@@ -1,4 +1,9 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  Input,
+  HostListener,
+} from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ArrowUpwardComponent } from '../arrow-upward/arrow-upward.component';
@@ -12,5 +17,14 @@ import { ArrowUpwardComponent } from '../arrow-upward/arrow-upward.component';
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class FooterBarComponent {
-  @Input() connected: 'Off' | 'On' = 'Off';
+  showButton = false;
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    this.showButton = window.scrollY > 100;
+  }
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
 }
