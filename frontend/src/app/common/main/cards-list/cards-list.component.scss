@@ -19,7 +19,8 @@
   margin: 0 auto;
 
   &:not(.detail-view) {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 280px));
+    justify-content: center;
   }
 
   &.detail-view {
@@ -28,7 +29,8 @@
   }
 
   app-card {
-    width: 100%;
+    width: 280px;
+    height: 400px;
     display: block;
   }
 }

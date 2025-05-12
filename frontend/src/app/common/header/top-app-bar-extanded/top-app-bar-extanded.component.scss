@@ -1,24 +1,20 @@
 @use "../../../../styles.scss";
 
 .root {
-  padding: 0px 24px 0px 24px;
+  padding: 0rem 1.5rem 0rem 1.5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 108px;
+  gap: 6.75rem;
   box-sizing: border-box;
-  background: #fef7ff;
+  background: styles.$primary-color;
 }
 .logoFrame {
-  display: flex;
   flex-direction: column;
-  justify-content: center;
   flex-wrap: nowrap;
-  align-items: center;
-  gap: 10px;
+  gap: 1rem;
   box-sizing: border-box;
   overflow: hidden;
-  background: #fef7ff;
-  height: 68px;
-  align-items: center;
+  background: styles.$primary-color;
+  height: 4.25rem;
 }
