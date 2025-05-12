@@ -1,4 +1,9 @@
+<div class="cards-list-header" *ngIf="isDetailView">
+  <button mat-icon-button class="back-btn" (click)="goBack()">
+    <mat-icon>arrow_back</mat-icon>
+    Parcours
+  </button>
+</div>
 <div class="cards-container" [class.detail-view]="isDetailView">
   <app-card *ngFor="let hike of hikes" [hikeId]="hike.id"></app-card>
-  <!-- <app-card [hikeId]="1"></app-card> -->
 </div>
