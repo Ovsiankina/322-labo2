@@ -1,4 +1,8 @@
-<mat-card *ngIf="hike" class="hike-card" [class.selected]="isSelected">
+<mat-card
+  *ngIf="hike"
+  class="hike-card responsive"
+  [class.selected]="isSelected"
+>
   <mat-flat-button color="primary" [routerLink]="['/hike', hike.id]">
     <img mat-card-image [src]="hike.avatar" [alt]="hike.avatar" />
     <img canton-badge [src]="hike.canton.badge" [alt]="hike.canton.name" />

@@ -1,20 +1,44 @@
+@use "../../styles.scss" as *;
+
 .error-container {
-  width: 100vw;
-  height: 100vh;
+  height: calc(100vh - $top-bar-height);
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #f9f3fc;
+  background: #ffffff;
+  position: relative;
+}
+
+.back-button {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+  background-color: $primary-color;
+
+  &:hover {
+    background-color: $is-selected-color;
+  }
+
+  mat-icon {
+    color: #2d2a32;
+  }
 }
 
 .error-box {
-  background: #ece5f1;
+  background: #ece6f0;
   border-radius: 2rem;
   padding: 2rem 3rem;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  justify-content: center;
   min-width: 300px;
 }
 

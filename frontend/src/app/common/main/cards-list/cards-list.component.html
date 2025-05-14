@@ -5,5 +5,12 @@
   </button>
 </div>
 <div class="cards-container" [class.detail-view]="isDetailView">
-  <app-card *ngFor="let hike of hikes" [hikeId]="hike.id"></app-card>
+  <app-card
+    *ngFor="let hike of hikes"
+    [hikeId]="hike.id"
+    [isSelected]="isDetailView && selectedHikeId === hike.id"
+  >
+  </app-card>
 </div>
+
+<!-- TODO: Add a filter component -->

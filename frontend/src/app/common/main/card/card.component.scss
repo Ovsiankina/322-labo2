@@ -22,6 +22,7 @@ mat-card-actions {
     border-color: styles.$secondary-color;
     box-shadow: 0 0 15px rgba(styles.$secondary-color, 0.3);
     transform: translateY(-2px);
+    background-color: styles.$is-selected-color;
   }
 
   img[mat-card-image] {

@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CardComponent } from '../card/card.component';
-import { Router } from '@angular/router';
+import { Router, ActivatedRoute } from '@angular/router';
 import { MatIconModule } from '@angular/material/icon';
 import { HikeService, Hike } from '../../../services/hike.service';
 
@@ -14,10 +14,14 @@ import { HikeService, Hike } from '../../../services/hike.service';
 })
 export class CardsListComponent implements OnInit {
   @Input() isDetailView: boolean = false;
-
   hikes: Hike[] = [];
+  selectedHikeId: number | null = null;
 
-  constructor(private router: Router, private hikeService: HikeService) {}
+  constructor(
+    private router: Router,
+    private route: ActivatedRoute,
+    private hikeService: HikeService
+  ) {}
 
   ngOnInit() {
     this.hikeService.getAllHikes().subscribe({
@@ -28,6 +32,13 @@ export class CardsListComponent implements OnInit {
         console.error('Erreur lors de la récupération des randonnées:', error);
       },
     });
+
+    // Si nous sommes en mode détail, récupérer l'ID de la randonnée sélectionnée
+    if (this.isDetailView) {
+      this.route.params.subscribe((params) => {
+        this.selectedHikeId = +params['id'];
+      });
+    }
   }
 
   goBack() {
