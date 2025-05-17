@@ -21,7 +21,6 @@ mat-card-actions {
 
   &.selected {
     box-shadow: 0 0 15px rgba(styles.$secondary-color, 0.05);
-    //transform: translateY(-2px);
     background-color: styles.$is-selected-color;
   }
 

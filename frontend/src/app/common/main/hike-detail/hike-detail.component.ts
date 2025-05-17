@@ -1,3 +1,7 @@
+/**
+ * Component that displays detailed information about a specific hike.
+ * Includes description, map view, and related hikes.
+ */
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
@@ -15,13 +19,20 @@ import { DescriptionMapToggleComponent } from '../description-map-toggle/descrip
 import { DescriptionComponent } from '../description/description.component';
 import { MapComponent } from '../map/map.component';
 
+/**
+ * @Component decorator that defines the metadata for the hike detail component
+ * @property {string} selector - The CSS selector that identifies this component in a template
+ * @property {boolean} standalone - Indicates this is a standalone component
+ * @property {Array} imports - List of components and modules used in this component
+ * @property {string} templateUrl - Path to the component's template file
+ * @property {string} styleUrls - Path to the component's styles file
+ */
 @Component({
   selector: 'app-hike-detail',
   standalone: true,
   imports: [
     CommonModule,
-    /*     CardComponent,
-     */ MatCardModule,
+    MatCardModule,
     MatIconModule,
     MatDividerModule,
     MatBadgeModule,
@@ -37,13 +48,25 @@ import { MapComponent } from '../map/map.component';
   styleUrls: ['./hike-detail.component.scss'],
 })
 export class HikeDetailComponent implements OnInit {
+  /** The current hike being displayed */
   hike: Hike | undefined;
+
+  /** Currently selected view tab (description or map) */
   selectedTab: 'description' | 'map' = 'description';
 
+  /**
+   * Creates an instance of HikeDetailComponent
+   * @param route - Angular ActivatedRoute service for accessing route parameters
+   * @param hikeService - Service for fetching hike data
+   */
   constructor(private route: ActivatedRoute, private hikeService: HikeService) {
     console.log('HikeDetailComponent constructor called');
   }
 
+  /**
+   * Lifecycle hook that is called after data-bound properties are initialized
+   * Loads the hike details based on the route parameter
+   */
   ngOnInit() {
     console.log('HikeDetailComponent ngOnInit called');
 
@@ -64,6 +87,10 @@ export class HikeDetailComponent implements OnInit {
     });
   }
 
+  /**
+   * Handles tab changes between description and map views
+   * @param tab - The selected tab ('description' or 'map')
+   */
   onTabChange(tab: string) {
     console.log('Tab changed to:', tab);
     this.selectedTab = tab as 'description' | 'map';
