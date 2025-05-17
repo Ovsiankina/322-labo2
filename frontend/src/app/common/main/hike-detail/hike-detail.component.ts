@@ -20,8 +20,8 @@ import { MapComponent } from '../map/map.component';
   standalone: true,
   imports: [
     CommonModule,
-    CardComponent,
-    MatCardModule,
+    /*     CardComponent,
+     */ MatCardModule,
     MatIconModule,
     MatDividerModule,
     MatBadgeModule,

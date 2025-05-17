@@ -24,21 +24,35 @@ export class CardsListComponent implements OnInit {
   ) {}
 
   ngOnInit() {
+    console.log('CardsListComponent initialized');
+
     this.hikeService.getAllHikes().subscribe({
       next: (data) => {
         this.hikes = data;
+        console.log('Hikes loaded:', this.hikes);
       },
       error: (error) => {
         console.error('Erreur lors de la récupération des randonnées:', error);
       },
     });
 
-    // Si nous sommes en mode détail, récupérer l'ID de la randonnée sélectionnée
-    if (this.isDetailView) {
-      this.route.params.subscribe((params) => {
-        this.selectedHikeId = +params['id'];
-      });
-    }
+    // S'abonner aux changements de l'URL pour mettre à jour l'état de sélection
+    this.route.params.subscribe((params) => {
+      console.log('Route params changed:', params);
+      if (params['id']) {
+        this.selectedHikeId = +params['id']; // Convertir en nombre
+        console.log('Selected hike ID updated:', this.selectedHikeId);
+      } else {
+        this.selectedHikeId = null;
+        console.log('Selected hike ID cleared');
+      }
+    });
+  }
+
+  selectHike(hike: Hike) {
+    console.log('CardsList: Selecting hike:', hike.id);
+    this.selectedHikeId = hike.id;
+    this.router.navigate(['/hike', hike.id]);
   }
 
   goBack() {
