@@ -1,9 +1,11 @@
+@use "../../../../styles" as styles;
+
 .toggle-container {
   margin-top: 1rem;
   display: flex;
   width: 100%;
   height: 32px;
-  border-radius: 16px;
+  border-radius: 1rem;
   border: 1.5px solid #b39ddb;
   overflow: hidden;
   background: transparent;
@@ -19,23 +21,24 @@
   cursor: pointer;
   transition: background 0.2s;
   height: 100%;
-  color: #4a148c;
-  background: #fff;
+  color: styles.$secondary-color;
+  background: styles.$light-color;
 }
 .toggle-tab.selected {
-  background: #ede7f6;
-  color: #4a148c;
+  background: styles.$is-selected-color;
+  color: styles.$secondary-color;
   font-weight: 600;
 }
 .toggle-tab.left {
-  border-top-left-radius: 16px;
-  border-bottom-left-radius: 16px;
+  border-top-left-radius: 1rem;
+  border-bottom-left-radius: 1rem;
 }
 .toggle-tab.right {
-  border-top-right-radius: 16px;
-  border-bottom-right-radius: 16px;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
 }
 .toggle-tab mat-icon {
   font-size: 18px;
-  vertical-align: middle;
+  display: flex;
+  align-items: center;
 }

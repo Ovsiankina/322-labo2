@@ -8,7 +8,7 @@
   <app-card
     *ngFor="let hike of hikes"
     [hikeId]="hike.id"
-    [isSelected]="isDetailView && selectedHikeId === hike.id"
+    [isSelected]="selectedHikeId === hike.id"
   >
   </app-card>
 </div>

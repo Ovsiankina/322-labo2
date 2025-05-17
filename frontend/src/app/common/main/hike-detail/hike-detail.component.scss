@@ -1,4 +1,4 @@
-@use "../../../styles" as styles;
+@use "../../../../styles.scss" as styles;
 
 .selected-hike {
   padding: 1rem;
@@ -34,7 +34,6 @@ img[canton-badge] {
   line-height: 1;
 }
 
-/* Mat-chip*/
 ::ng-deep .mat-chip {
   display: flex;
   align-items: center;
@@ -127,7 +126,7 @@ mat-divider {
   flex-direction: column;
   gap: 1rem;
   align-items: flex-start;
-  width: auto; // ou 100% si tu veux que ça prenne toute la largeur
-  color: #fff; // ou styles.$light-color
+  width: auto;
+  color: styles.$light-color;
   pointer-events: auto;
 }

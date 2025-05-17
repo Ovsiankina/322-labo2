@@ -1,9 +1,9 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatCardModule } from '@angular/material/card';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Router, ActivatedRoute } from '@angular/router';
 import { Hike, HikeService } from '../../../services/hike.service';
 import { MatDividerModule } from '@angular/material/divider';
 import { StarRatingComponent } from '../star-rating/star-rating.component';
@@ -26,9 +26,11 @@ import { StarRatingComponent } from '../star-rating/star-rating.component';
 export class CardComponent implements OnInit {
   @Input() hikeId: number = 0;
   @Input() isSelected: boolean = false;
+  @Output() hikeSelected = new EventEmitter<Hike>();
   hike: Hike | null = null;
+  isCardSelected: boolean = false;
 
-  constructor(private hikeService: HikeService) {}
+  constructor(private hikeService: HikeService, private router: Router) {}
 
   ngOnInit() {
     if (this.hikeId) {
@@ -44,5 +46,11 @@ export class CardComponent implements OnInit {
         },
       });
     }
+  }
+
+  selectHike(hike: Hike) {
+    this.isCardSelected = !this.isCardSelected;
+    this.hikeSelected.emit(hike);
+    this.router.navigate(['/hike', hike.id]);
   }
 }

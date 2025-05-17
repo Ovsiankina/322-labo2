@@ -19,7 +19,6 @@ mat-card-actions {
   border: 2px solid transparent;
 
   &.selected {
-    border-color: styles.$secondary-color;
     box-shadow: 0 0 15px rgba(styles.$secondary-color, 0.3);
     transform: translateY(-2px);
     background-color: styles.$is-selected-color;
@@ -128,4 +127,9 @@ mat-divider {
   justify-content: space-between;
   align-items: center;
   gap: 4px;
+}
+
+#elevation-icon {
+  width: 1.1rem;
+  height: 1.1rem;
 }
