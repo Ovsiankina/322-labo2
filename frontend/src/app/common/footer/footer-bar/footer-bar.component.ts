@@ -12,15 +12,6 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { ArrowUpwardComponent } from '../arrow-upward/arrow-upward.component';
 
-/**
- * @Component decorator that defines the metadata for the footer bar component
- * @property {string} selector - The CSS selector that identifies this component in a template
- * @property {string} templateUrl - Path to the component's template file
- * @property {string} styleUrls - Path to the component's styles file
- * @property {boolean} standalone - Indicates this is a standalone component
- * @property {Array} imports - List of components and modules used in this component
- * @property {ChangeDetectionStrategy} changeDetection - Strategy for change detection
- */
 @Component({
   selector: 'app-footer-bar',
   templateUrl: './footer-bar.component.html',

@@ -15,19 +15,19 @@ export class StarRatingComponent {
 
   getStarColor(star: number): string {
     if (star <= Math.floor(this.rating)) {
-      return '#FFD700'; // Étoile pleine
+      return '#FFD700';
     } else if (star === Math.ceil(this.rating) && this.rating % 1 !== 0) {
-      return '#FFD700'; // Demi-étoile
+      return '#FFD700';
     }
-    return '#E0E0E0'; // Étoile vide
+    return '#E0E0E0';
   }
 
   getStarIcon(star: number): string {
     if (star <= Math.floor(this.rating)) {
-      return 'star'; // Étoile pleine
+      return 'star';
     } else if (star === Math.ceil(this.rating) && this.rating % 1 !== 0) {
-      return 'star_half'; // Demi-étoile
+      return 'star_half';
     }
-    return 'star_border'; // Étoile vide
+    return 'star_border';
   }
 }

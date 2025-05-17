@@ -6,7 +6,6 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 import { HikeService, Hike } from '../../../services/hike.service';
-import { CardComponent } from '../card/card.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
@@ -19,14 +18,6 @@ import { DescriptionMapToggleComponent } from '../description-map-toggle/descrip
 import { DescriptionComponent } from '../description/description.component';
 import { MapComponent } from '../map/map.component';
 
-/**
- * @Component decorator that defines the metadata for the hike detail component
- * @property {string} selector - The CSS selector that identifies this component in a template
- * @property {boolean} standalone - Indicates this is a standalone component
- * @property {Array} imports - List of components and modules used in this component
- * @property {string} templateUrl - Path to the component's template file
- * @property {string} styleUrls - Path to the component's styles file
- */
 @Component({
   selector: 'app-hike-detail',
   standalone: true,

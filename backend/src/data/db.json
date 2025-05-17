@@ -385,10 +385,10 @@
       },
       "map_informations": {
         "map_picture": "assets/hikes_pictures/avatar-default.png",
-        "topographic_map_name": "Nom de la randonnée",
-        "Go_to": "Description de la randonnée",
-        "walking_time": "Description de la randonnée",
-        "get_launch": "Description de la randonnée"
+        "topographic_map_name": "",
+        "Go_to": "",
+        "walking_time": "",
+        "get_launch": ""
       },
       "avatar": "assets/hikes_pictures/avatar-default.png",
       "hike_banner": "assets/hikes_pictures/avatar-default.png",

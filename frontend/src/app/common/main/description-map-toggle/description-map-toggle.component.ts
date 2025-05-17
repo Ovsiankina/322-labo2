@@ -13,6 +13,10 @@ export class DescriptionMapToggleComponent {
   @Input() selectedTab: 'description' | 'map' = 'description';
   @Output() selectedChange = new EventEmitter<string>();
 
+  /**
+   * Handles tab selection
+   * @param tab - The tab to select ('description' or 'map')
+   */
   select(tab: 'description' | 'map') {
     if (this.selectedTab !== tab) {
       this.selectedChange.emit(tab);

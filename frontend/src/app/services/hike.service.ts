@@ -9,21 +9,21 @@ import { Observable, tap, map } from 'rxjs';
 /**
  * Interface representing a hike object
  * @interface Hike
- * @property {number} id - Unique identifier for the hike
- * @property {string} hike_name - Name of the hike
- * @property {string} hike_difficulty - Difficulty level of the hike
- * @property {string} hike_distance - Distance of the hike
- * @property {string} hike_duration - Estimated duration of the hike
- * @property {string} hike_banner - URL of the hike's banner image
- * @property {string} avatar - URL of the hike's avatar image
- * @property {string} card_picture - URL of the hike's card image
- * @property {number|null} hike_note - Rating of the hike
- * @property {Object} hike_elevation - Elevation information
- * @property {number} hike_elevation.positive_elevation - Total positive elevation gain
- * @property {number} hike_elevation.negative_elevation - Total negative elevation gain
- * @property {Object} canton - Canton information
- * @property {string} canton.name - Name of the canton
- * @property {string} canton.badge - URL of the canton's badge image
+ * @property {number} id
+ * @property {string} hike_name
+ * @property {string} hike_difficulty
+ * @property {string} hike_distance
+ * @property {string} hike_duration
+ * @property {string} hike_banner
+ * @property {string} avatar
+ * @property {string} card_picture
+ * @property {number|null} hike_note
+ * @property {Object} hike_elevation
+ * @property {number} hike_elevation.positive_elevation
+ * @property {number} hike_elevation.negative_elevation
+ * @property {Object} canton
+ * @property {string} canton.name
+ * @property {string} canton.badge
  */
 export interface Hike {
   id: number;

@@ -9,8 +9,7 @@ import { MatDividerModule } from '@angular/material/divider';
   styleUrls: ['./description.component.scss'],
   standalone: true,
   imports: [CommonModule, MatCardModule, MatDividerModule],
-  // Ajoute les imports Angular Material nécessaires ici
 })
 export class DescriptionComponent {
-  @Input() hike: any; // Typage à affiner selon ton modèle
+  @Input() hike: any;
 }
