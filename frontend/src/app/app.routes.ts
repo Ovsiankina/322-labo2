@@ -14,7 +14,7 @@ import { ErrorComponent } from './error/error.component';
  * @property {Component} component - The component to be displayed for the route
  */
 export const routes: Routes = [
-  { path: '', component: CardsListComponent }, // Default route - displays list of hikes
-  { path: 'hike/:id', component: HikeDetailComponent }, // Route for individual hike details
-  { path: '**', component: ErrorComponent }, // Wildcard route - handles 404 errors
+  { path: '', component: CardsListComponent },
+  { path: 'hike/:id', component: HikeDetailComponent },
+  { path: '**', component: ErrorComponent },
 ];

@@ -87,24 +87,6 @@ body {
   }
 }
 
-// Grille
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px;
-}
-
-// Colonnes
-@for $i from 1 through 12 {
-  .col-#{$i} {
-    flex: 0 0 percentage($i / 12);
-    max-width: percentage($i / 12);
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-}
-
 // Espacement
 .m-1 {
   margin: 0.25rem;
