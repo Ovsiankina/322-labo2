@@ -51,13 +51,10 @@ export class CardsListComponent implements OnInit {
    * Loads the list of hikes and subscribes to route parameter changes
    */
   ngOnInit() {
-    console.log('CardsListComponent initialized');
-
     // Fetch all hikes from the service
     this.hikeService.getAllHikes().subscribe({
       next: (data) => {
         this.hikes = data;
-        console.log('Hikes loaded:', this.hikes);
       },
       error: (error) => {
         console.error('Error loading hikes:', error);
@@ -66,13 +63,10 @@ export class CardsListComponent implements OnInit {
 
     // Subscribe to route parameter changes to update selection state
     this.route.params.subscribe((params) => {
-      console.log('Route params changed:', params);
       if (params['id']) {
         this.selectedHikeId = +params['id']; // Convert to number
-        console.log('Selected hike ID updated:', this.selectedHikeId);
       } else {
         this.selectedHikeId = null;
-        console.log('Selected hike ID cleared');
       }
     });
   }
@@ -82,7 +76,6 @@ export class CardsListComponent implements OnInit {
    * @param hike - The selected hike object
    */
   selectHike(hike: Hike) {
-    console.log('CardsList: Selecting hike:', hike.id);
     this.selectedHikeId = hike.id;
     this.router.navigate(['/hike', hike.id]);
   }

@@ -60,18 +60,14 @@ export class HikeService {
    * Creates an instance of HikeService
    * @param http - Angular HttpClient for making HTTP requests
    */
-  constructor(private http: HttpClient) {
-    console.log('HikeService initialized with API URL:', this.apiUrl);
-  }
+  constructor(private http: HttpClient) {}
 
   /**
    * Retrieves all hikes from the API
    * @returns {Observable<Hike[]>} Observable of array of hike objects
    */
   getAllHikes(): Observable<Hike[]> {
-    console.log('Fetching all hikes...');
     return this.http.get<Hike[]>(`${this.apiUrl}/hikes`).pipe(
-      tap((hikes) => console.log('Received hikes:', hikes)),
       map((hikes) =>
         hikes.map((hike) => ({
           ...hike,
@@ -87,9 +83,7 @@ export class HikeService {
    * @returns {Observable<Hike>} Observable of the requested hike object
    */
   getHikeById(id: number): Observable<Hike> {
-    console.log('Fetching hike with ID:', id);
     return this.http.get<Hike>(`${this.apiUrl}/hikes/${id}`).pipe(
-      tap((hike) => console.log('Received hike:', hike)),
       map((hike) => ({
         ...hike,
         id: +hike.id, // Convert ID to number

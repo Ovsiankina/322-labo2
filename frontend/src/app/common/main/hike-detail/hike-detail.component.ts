@@ -59,25 +59,22 @@ export class HikeDetailComponent implements OnInit {
    * @param route - Angular ActivatedRoute service for accessing route parameters
    * @param hikeService - Service for fetching hike data
    */
-  constructor(private route: ActivatedRoute, private hikeService: HikeService) {
-    console.log('HikeDetailComponent constructor called');
-  }
+  constructor(
+    private route: ActivatedRoute,
+    private hikeService: HikeService
+  ) {}
 
   /**
    * Lifecycle hook that is called after data-bound properties are initialized
    * Loads the hike details based on the route parameter
    */
   ngOnInit() {
-    console.log('HikeDetailComponent ngOnInit called');
-
     // Get the hike ID from the route parameters
     this.route.params.subscribe((params) => {
       const id = +params['id']; // Convert to number
-      console.log('Route params received, hike ID:', id);
 
       this.hikeService.getHikeById(id).subscribe({
         next: (hike) => {
-          console.log('Hike data received:', hike);
           this.hike = hike;
         },
         error: (error) => {
@@ -92,7 +89,6 @@ export class HikeDetailComponent implements OnInit {
    * @param tab - The selected tab ('description' or 'map')
    */
   onTabChange(tab: string) {
-    console.log('Tab changed to:', tab);
     this.selectedTab = tab as 'description' | 'map';
   }
 }
